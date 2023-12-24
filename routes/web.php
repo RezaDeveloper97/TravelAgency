@@ -28,3 +28,7 @@ Route::get('/add-product', function () {
 Route::get('/login', function () {
     return view('panel.login');
 })->name('panel.login');
+
+Route::post('/REZA', function () {
+    return "REZA";
+})->name('panel.REZA');
