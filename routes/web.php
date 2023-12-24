@@ -15,12 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('panel.index');
-});
+})->name('panel.index');
 
 Route::get('/products', function () {
     return view('panel.shop-products');
-});
+})->name('panel.products');
 
 Route::get('/add-product', function () {
     return view('panel.shop-addproduct');
-});
+})->name('panel.add-product');
+
+Route::get('/login', function () {
+    return view('panel.login');
+})->name('panel.login');
