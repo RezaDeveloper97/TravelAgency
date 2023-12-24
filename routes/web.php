@@ -32,3 +32,7 @@ Route::get('/login', function () {
 Route::post('/REZA', function () {
     return "REZA";
 })->name('panel.REZA');
+
+Route::post('/Taheri', function () {
+    return "Taheri";
+})->name('panel.Taheri');
