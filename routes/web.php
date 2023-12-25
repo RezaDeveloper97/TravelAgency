@@ -32,3 +32,7 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('panel.login');
 })->name('panel.register');
+
+Route::get('/forgetpwd', function () {
+    return view('panel.login');
+})->name('panel.forgetpwd');
