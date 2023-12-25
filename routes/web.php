@@ -36,3 +36,8 @@ Route::get('/register', function () {
 Route::get('/forgetpwd', function () {
     return view('panel.login');
 })->name('panel.forgetpwd');
+
+Route::get('/auth-email', function () {
+    return view('panel.login');
+})->name('panel.auth-email');
+
