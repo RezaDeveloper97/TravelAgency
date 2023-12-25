@@ -29,10 +29,6 @@ Route::get('/login', function () {
     return view('panel.login');
 })->name('panel.login');
 
-Route::post('/REZA', function () {
-    return "REZA";
-})->name('panel.REZA');
-
-Route::post('/Taheri', function () {
-    return "Taheri";
-})->name('panel.Taheri');
+Route::get('/register', function () {
+    return view('panel.login');
+})->name('panel.register');
