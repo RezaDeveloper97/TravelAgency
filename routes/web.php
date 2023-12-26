@@ -41,3 +41,8 @@ Route::get('/auth-email', function () {
     return view('panel.login');
 })->name('panel.auth-email');
 
+
+Route::get('/post-add', function () {
+    return view('panel.post-add');
+})->name('panel.post-add');
+
