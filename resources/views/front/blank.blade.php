@@ -1,4 +1,4 @@
-@extends('layouts.panel.master')
+@extends('layouts.front')
  
 @section('title', 'عنوان')
  
