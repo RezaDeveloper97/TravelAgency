@@ -7,18 +7,18 @@
 
 
     <!-- Links Of CSS File -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.rtl.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/fonts/remixicon.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/fonts/flaticon_mycollection.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/scrollCue.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/rtl.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('front-assets/css/bootstrap.rtl.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front-assets/fonts/remixicon.css') }}">
+    <link rel="stylesheet" href="{{ asset('front-assets/fonts/flaticon_mycollection.css') }}">
+    <link rel="stylesheet" href="{{ asset('front-assets/css/swiper-bundle.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front-assets/css/scrollCue.css') }}">
+    <link rel="stylesheet" href="{{ asset('front-assets/css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('front-assets/css/rtl.css') }}">
+    <link rel="stylesheet" href="{{ asset('front-assets/css/responsive.css') }}">
 
     <!-- Title -->
     <title>@yield('title')</title>
-    <link rel="icon" type="image/svg" href="{{ asset('assets/images/favicon.svg') }}">
+    <link rel="icon" type="image/svg" href="{{ asset('front-assets/images/favicon.svg') }}">
 
     @stack('endOfhead')
 </head>
@@ -95,7 +95,7 @@
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" width="80" alt="logo">
+                <img src="front-assets/images/logo.png" width="80" alt="logo">
             </a>
             <button class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button" aria-controls="navbarOffcanvas">
                 <span class="burger-menu">
@@ -109,13 +109,13 @@
                     <li class="nav-item">
                         <a href="index.html" class="nav-link  with-image">
                             صفحه اصلی
-                            <img src="assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
+                            <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link with-image">
                             ویزای تحصیلی
-                            <img src="assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
+                            <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
@@ -127,7 +127,7 @@
                     <li class="nav-item ">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link with-image">
                             ویزای توریستی
-                            <img src="assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
+                            <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
@@ -138,7 +138,7 @@
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link with-image">
                             وقت سفارت
-                            <img src="assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
+                            <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
@@ -149,7 +149,7 @@
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link with-image">
                             پیکاپ
-                            <img src="assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
+                            <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
@@ -160,7 +160,7 @@
                     <li class="nav-item">
                         <a href="blog.html" class="nav-link  with-image">
                             وبلاگ
-                            <img src="assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
+                            <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                     </li>
 
@@ -168,14 +168,14 @@
                     <li class="nav-item">
                         <a href="coaching.html" class="nav-link  with-image">
                             رضایت مشتری ها
-                            <img src="assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
+                            <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                     </li>
 
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link  with-image">
                             تماس با ما
-                            <img src="assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
+                            <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                     </li>
                 </ul>
@@ -185,7 +185,7 @@
                         <ul>
                             <li>
                                 <div class="icon">
-                                    <a href="tel:99654892986"><img src="assets/images/svgs/phone1.svg" alt="image"></a>
+                                    <a href="tel:99654892986"><img src="front-assets/images/svgs/phone1.svg" alt="image"></a>
                                 </div>
                             </li>
                             <li>
@@ -208,7 +208,7 @@
     <div class="responsive-navbar offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
         <div class="offcanvas-header">
             <a href="index.html" class="logo d-inline-block">
-                <img src="assets/images/logo.png" alt="logo">
+                <img src="front-assets/images/logo.png" alt="logo">
             </a>
             <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
                 <i class="ri-close-line"></i>
@@ -305,7 +305,7 @@
                     <ul>
                         <li>
                             <div class="icon">
-                                <img src="assets/images/svgs/phone1.svg" alt="image">
+                                <img src="front-assets/images/svgs/phone1.svg" alt="image">
                             </div>
                         </li>
                         <li>
@@ -325,7 +325,123 @@
     <!-- End Mobile Device Navbar Area -->
     <!-- Hero Warp Start -->
     @yield("content")
-    <!-- Both Warp End -->
+
+
+
+
+<!-- Both Warp Start -->
+<div class="both-warp">
+    <div class="footer-warp pt-100 pb-75">
+        <div class="container style1">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="front-assets/images/white-logo.png" alt="image">
+                            </a>
+                        </div>
+                        <p class="first-tag">لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است.لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد.</p>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h3>مرور</h3>
+                                <ul class="explore-link">
+                                    <li>
+                                        <a href="about.html">درباره شرکت</a>
+                                    </li>
+                                    <li>
+                                        <a href="team.html">ملاقات با تیم</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html">از وبلاگ ما</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">تماس با ما</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa.html">سود ما</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="footer-widget">
+                                <h3>ویزای ما</h3>
+                                <ul class="explore-link">
+                                    <li>
+                                        <a href="visa.html">ویزای دانشجویی</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa.html">ویزای خانوادگی</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa.html">ویزای تجاری</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa.html">ویزای توریستی</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa.html">ویزای پزشکی</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="footer-widget">
+                                <h3>تماس با ما</h3>
+                                <ul class="footer-contact">
+                                    <li>
+                                        <i class="ri-mail-line"></i>
+                                        <a href="/cdn-cgi/l/email-protection#5038353c3c3f10353b35297e333f3d"><span class="__cf_email__" data-cfemail="b5ddd0d9d9daf5d0ded0cc9bd6dad8">[email&#160;protected]</span></a>
+                                    </li>
+                                    <li>
+                                        <i class="ri-map-pin-line"></i>
+                                        <p>ایران ، استان تهران ، میدان آزادی</p>
+                                    </li>
+                                    <li>
+                                        <i class="ri-time-line"></i>
+                                        <p>Mon - Sat: 9.00 AM to 10.00 PM</p>
+                                    </li>
+                                    <li>
+                                        <img src="front-assets/images/svgs/phone2.svg" alt="">
+                                        <a href="tel:99654892986" dir="ltr">+ 99 (65489) 2986</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h3>مشترک شدن خبرنامه</h3>
+                                <p class="last-tag">برای دریافت به‌روزرسانی‌ها، پیشنهادات و تحصیل در خارج از کشور، آدرس ایمیل خود را وارد کنید.</p>
+                                <div class="input-box">
+                                    <form>
+                                        <input type="text" class="form-control" placeholder="ایمیل شما">
+                                        <button class="default-btn" type="submit">
+                                            <img src="front-assets/images/svgs/paper-plane1.svg" alt="">
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right-warp">
+        <div class="container style1">
+            <div class="inner-copy-warp">
+                <p>© <span>Theodoraworld</span> تمامی حقوق محفوظ است</a></p>
+            </div>
+        </div>
+    </div>
+    <img src="front-assets/images/shapes/footer-shape.png" class="footer-shape" alt="image">
+</div>
+<!-- Both Warp End -->
     <!-- Scroll Top Btn -->
     <div class="top-button-icon">
         <button id="scrollTopBtn">
@@ -349,13 +465,13 @@
     <!-- Modal -->
     <!-- Links of JS File -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/scrollCue.min.js') }}"></script>
+    <script src="{{ asset('front-assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('front-assets/js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('front-assets/js/scrollCue.min.js') }}"></script>
 
     @stack('endOfbody')
 
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="{{ asset('front-assets/js/custom.js') }}"></script>
     
 </body>
 </html>   

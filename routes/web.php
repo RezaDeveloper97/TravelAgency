@@ -41,8 +41,22 @@ Route::get('/auth-email', function () {
     return view('panel.login');
 })->name('panel.auth-email');
 
+Route::get('/posts/add', function () { 
+    return view('panel.post-add'); 
+})->name('panel.add');
 
-Route::get('/post-add', function () {
-    return view('panel.post-add');
-})->name('panel.post-add');
+Route::get('/blank', function () { 
+    return view('front.blank'); 
+})->name('front.blank');
 
+Route::get('/index', function () { 
+    return view('front.index'); 
+})->name('front.index');
+
+Route::get('/online-assessment', function () { 
+    return view('front.online-assessment'); 
+})->name('front.online-assessment');
+
+Route::get('/contact', function () { 
+    return view('front.contact'); 
+})->name('front.contact');

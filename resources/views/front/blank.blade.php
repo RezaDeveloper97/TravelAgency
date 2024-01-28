@@ -1,6 +1,6 @@
 @extends('layouts.front')
  
-@section('title', 'عنوان')
+@section('title', 'Theodoraworld')
  
 {{-- head modules --}}
 @prepend('endOfhead')

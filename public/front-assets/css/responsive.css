@@ -1,0 +1,2411 @@
+/* Max width 767px */
+@media only screen and (max-width: 991px) {
+  .container {
+    max-width: 540px;
+  }
+  .container.style1 {
+    max-width: 540px;
+  }
+  .container-fluid {
+    max-width: 540px;
+  }
+  p {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .default-btn {
+    padding: 14px 22px;
+    font-size: 14px;
+  }
+  .section-title {
+    margin-bottom: 20px;
+  }
+  .section-title h2 {
+    font-size: 22px;
+  }
+  .section-title .title {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .single-section h2 {
+    font-size: 22px;
+  }
+  .single-section .title {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .pb-75 {
+    padding-bottom: 35px;
+  }
+  .pb-100 {
+    padding-bottom: 60px;
+  }
+  .pt-100 {
+    padding-top: 60px;
+  }
+  .ptb-100 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /*
+  Top Bar Style
+  ======================================================*/
+  .top-header-warp {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .header-widget .header-contact li {
+    margin-bottom: 8px;
+  }
+  .header-widget.style2 {
+    display: inline-block !important;
+  }
+  .header-widget .input-box .form-control {
+    height: 45px;
+    padding-right: 18px;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  /*
+  Hero Warp Style
+  ======================================================*/
+  .hero-content {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .hero-content h1 {
+    font-size: 25px;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+  .hero-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+  .inner-hero-warp::before {
+    height: 60px;
+  }
+  /*
+  Immigration Warp Style
+  ======================================================*/
+  .immigration-widget .content {
+    padding: 20px;
+  }
+  .immigration-widget .content span {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .immigration-widget .content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .immigration-widget .image .icon {
+    width: 45px;
+    height: 45px;
+    left: 20px;
+    bottom: -21px;
+    line-height: 50px;
+  }
+  /*
+  About Warp Style
+  ======================================================*/
+  .about-image {
+    position: relative;
+    padding-left: 0;
+  }
+  .about-image .about2 {
+    padding: 25px 0 25px 0;
+  }
+  .about-image .last-image {
+    width: auto;
+    height: auto;
+  }
+  .about-image .last-image::before {
+    display: none;
+  }
+  .about-image .about3 {
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 0;
+  }
+  .about-content {
+    padding-right: 0;
+    padding-top: 20px;
+  }
+  .about-content p {
+    margin-bottom: 20px;
+  }
+  .about-content .about-list {
+    margin-bottom: 20px;
+  }
+  .about-content .about-list li {
+    padding-right: 20px;
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .about-content .about-list li i {
+    font-size: 16px;
+    top: 1px;
+  }
+  .about-content .about-btn-warp {
+    display: inline-block !important;
+  }
+  .about-content .about-btn-warp .support {
+    padding-right: 0;
+    padding-top: 15px;
+  }
+  .funfact-box.style3 {
+    margin-left: 0;
+  }
+  .funfact-box.style4 {
+    margin-right: 0;
+  }
+  /*
+  Application Warp Style
+  ======================================================*/
+  .application-widget {
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  .application-widget .heading-icon {
+    margin-bottom: 15px;
+  }
+  .application-widget .heading-icon .icon {
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    margin-left: 15px;
+    line-height: 63px;
+  }
+  .application-widget .heading-icon h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  /*
+  Service Warp Style
+  ======================================================*/
+  .inner-service-warp .container.style1 {
+    padding: 0;
+  }
+  .service-widget {
+    padding: 0 20px 0 20px;
+  }
+  .service-widget .service-image .service-2 {
+    display: none;
+  }
+  .service-content {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  .service-content h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .service-content .service-list li {
+    padding-right: 26px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  /*
+  Feedback Warp Style
+  ======================================================*/
+  .feedback-widget .content {
+    padding: 25px;
+  }
+  .feedback-widget .content p {
+    line-height: 26px;
+  }
+  .feedback-widget .client {
+    padding: 20px 0 0 0;
+  }
+  .feedback-widget .client.style2 {
+    padding: 0 0 20px 0;
+  }
+  .feedback-widget .client .icon {
+    display: none;
+  }
+  .feedback-widget .client .image {
+    width: 65px;
+    height: 65px;
+    margin-left: 18px;
+  }
+  .feedback-widget .client .self h4 {
+    font-size: 18px;
+  }
+  /*
+  Choose Warp Style
+  ======================================================*/
+  .choose-content {
+    padding: 60px 12px 30px 12px;
+  }
+  .choose-content .choose-support {
+    display: inline-block !important;
+    margin-bottom: 15px;
+  }
+  .choose-content .choose-support ul {
+    margin-bottom: 15px;
+  }
+  .choose-content .choose-support ul li {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  .choose-content .choose-support ul li .icon {
+    width: 55px;
+    height: 55px;
+    line-height: 64px;
+    font-size: 25px;
+  }
+  .choose-content p {
+    margin-bottom: 20px;
+  }
+  .choose-image {
+    height: 300px;
+  }
+  .choose-image .choose-card {
+    position: absolute;
+    padding: 25px;
+    bottom: 0;
+    right: 0;
+  }
+  .choose-image .choose-card::before {
+    display: none;
+  }
+  .choose-image .choose-card .icon {
+    width: 55px;
+    height: 55px;
+    line-height: 63px;
+    font-size: 25px;
+    margin-left: 12px;
+  }
+  .choose-image .choose-card .content h4 {
+    font-size: 20px;
+  }
+  /*
+  Consulting Warp Style
+  ======================================================*/
+  .consulting-slider-warp .swiper-horizontal > .swiper-scrollbar,
+  .consulting-slider-warp .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: 100%;
+  }
+  .consulting-slider-warp .swiper-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .consulting-slider-warp .swiper-btn .swiper-button-next,
+  .consulting-slider-warp .swiper-btn .swiper-button-prev {
+    top: auto;
+    bottom: 0;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .consulting-slider-warp .swiper-btn .swiper-button-next {
+    right: auto;
+    left: -25px;
+  }
+  .consulting-slider-warp .swiper-btn .swiper-button-prev {
+    right: -25px;
+    left: auto;
+  }
+  .consulting-slider-warp .swiper {
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+    padding-top: 0;
+  }
+  /*
+  Benefit Warp Style
+  ======================================================*/
+  .benefit-image {
+    padding-left: 0;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .benefit-image .benefit-card {
+    top: 40px;
+    left: 0;
+    padding: 25px;
+    width: 220px;
+  }
+  .benefit-image .benefit-card h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .benefit-image .benefit3 {
+    display: none;
+  }
+  .benefit-image .benefit2 {
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 0;
+    margin-top: 25px;
+    border-radius: 0;
+    top: 0;
+  }
+  .benefit-content {
+    padding-right: 0;
+  }
+  .benefit-content h2 {
+    margin-bottom: 8px;
+  }
+  .benefit-content ul li {
+    padding-right: 70px;
+    margin-bottom: 20px;
+  }
+  .benefit-content ul li .icon {
+    height: 55px;
+    right: 0;
+    line-height: 63px;
+    width: 55px;
+    font-size: 25px;
+  }
+  .benefit-content ul li h5 {
+    font-size: 16px;
+  }
+  /*
+  Blog Warp Style
+  ======================================================*/
+  .blog-card .content {
+    padding: 30px 20px 20px 20px;
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .blog-card .content .self {
+    margin-bottom: 15px;
+  }
+  .blog-card .content h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .blog-card .content .user {
+    right: 20px;
+  }
+  .blog-card .content .comment::before {
+    right: 0;
+    top: -14px;
+    width: 100%;
+  }
+  /*
+  Partner Warp Style
+  ======================================================*/
+  .inner-partner {
+    padding: 60px 0;
+    border: 1px solid rgba(3, 43, 102, 0.05);
+  }
+  .inner-partner h4 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  /*
+  Footer Warp Style
+  ======================================================*/
+  .footer-widget .first-tag {
+    padding-left: 0;
+  }
+  .footer-widget .logo {
+    margin-bottom: 15px;
+  }
+  .footer-widget h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+    padding-right: 12px;
+  }
+  .footer-widget h3::before {
+    top: 4px;
+    right: 3px;
+    height: 15px;
+  }
+  .footer-widget .explore-link li {
+    margin-bottom: 8px;
+  }
+  .footer-widget .input-box .form-control {
+    height: 50px;
+    padding-right: 18px;
+    font-size: 14px;
+  }
+  .footer-widget .input-box .default-btn {
+    padding: 13px;
+  }
+  .col-lg-2:nth-child(2) .footer-widget {
+    margin-right: 0;
+  }
+  .col-lg-4:nth-child(3) .footer-widget {
+    margin-right: 0;
+  }
+  .col-lg-3:nth-child(4) .footer-widget {
+    margin-right: 0;
+  }
+  /*
+  Hero Style2 Warp Style
+  ======================================================*/
+  .hero-content-style2 {
+    padding-top: 60px;
+    padding-bottom: 15px;
+  }
+  .hero-content-style2 h1 {
+    font-size: 25px;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .hero-content-style2 p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  /*
+  Simple Warp Style
+  ======================================================*/
+  .simple-widget {
+    padding: 20px;
+  }
+  .simple-widget .icon-content {
+    padding: 10px;
+    top: 0;
+  }
+  .simple-widget .icon-content ul li {
+    margin-bottom: 10px;
+  }
+  .simple-widget .icon-content ul li .icon {
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    line-height: 55px;
+  }
+  .simple-widget .content {
+    padding-right: 12px;
+  }
+  .simple-widget .content .title {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  .simple-widget .content h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  /*
+  About Style2 Warp Style
+  ======================================================*/
+  .about-style2-image {
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+  }
+  .about-style2-image .about-style2-2 {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin-top: 25px;
+    width: 100%;
+  }
+  .about-style2-image .choose-card {
+    padding: 20px;
+    left: 0;
+  }
+  .about-style2-image .choose-card .icon {
+    width: 55px;
+    height: 55px;
+    line-height: 68px;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+  .about-style2-image .choose-card .content h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .about-style2-content {
+    margin-left: 0;
+  }
+  .about-style2-content .professional-warp .image {
+    display: none;
+  }
+  .about-style2-content h2 {
+    margin-bottom: 10px;
+  }
+  .about-style2-content p {
+    margin-bottom: 15px;
+  }
+  .about-style2-content .skill-card .icon-content {
+    margin-bottom: 8px;
+  }
+  .about-style2-content .skill-card .icon-content h3 {
+    font-size: 16px;
+  }
+  .about-style2-content .professional-warp {
+    padding-top: 25px;
+  }
+  .about-style2-content .professional-warp .icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+  }
+  .about-style2-content .professional-warp .icon .profesonal-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 71px;
+    margin-left: 10px;
+  }
+  .about-style2-content .professional-warp .content h1 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  /*
+  Offer Warp Style
+  ======================================================*/
+  .offer-card {
+    margin-top: 30px;
+    padding: 40px 20px 25px 20px;
+  }
+  .offer-card .icon {
+    top: -30px;
+    height: 60px;
+    width: 60px;
+    padding: 2px;
+  }
+  .offer-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  /*
+  Creative Warp Style
+  ======================================================*/
+  .creative-content h2 {
+    margin-bottom: 8px;
+  }
+  .creative-content .nav-pills {
+    margin-top: 20px;
+  }
+  .creative-content .nav-pills .nav-item:last-child {
+    margin-left: 0;
+  }
+  .creative-content .nav-pills .nav-item .nav-link {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  .mission-warp {
+    margin-left: 0;
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  .mission-warp .mission-list {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .mission-warp .mission-list ul li {
+    padding-right: 22px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .mission-warp .tags {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .mission-warp .image {
+    margin-right: 0;
+  }
+  .creative-image {
+    padding-right: 0;
+  }
+  /*
+  Function Warp Style
+  ======================================================*/
+  .col-lg-5:nth-child(1) .function-box {
+    margin-left: 0;
+  }
+  .col-lg-7:nth-child(2) .function-box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .function-box.style2 {
+    margin-right: 0;
+  }
+  /*
+  Together Warp Style
+  ======================================================*/
+  .together-content {
+    padding-bottom: 60px;
+    padding-top: 30px;
+  }
+  .together-content h2 {
+    margin-bottom: 15px;
+  }
+  .together-content .together-widget .content {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .together-content .together-widget .icon {
+    display: none;
+  }
+  .together-content .together-widget .user {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+  }
+  /*
+  Success Warp Style
+  ======================================================*/
+  .success-content h4 {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+  .funfact-box .icon {
+    width: 65px;
+    height: 65px;
+    font-size: 35px;
+    margin-bottom: 10px;
+    line-height: 79px;
+  }
+  .funfact-box h1 {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .funfact-box p {
+    font-size: 13px;
+  }
+  /*
+  Question Warp Style
+  ======================================================*/
+  .question-form {
+    padding: 25px;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .question-form h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .question-form .form-control {
+    height: 45px;
+    padding-right: 15px;
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+  .question-form textarea {
+    height: 100px !important;
+    padding-top: 10px;
+  }
+  /*
+  Hero Style3 Warp Style
+  ======================================================*/
+  .hero-warp-style3 {
+    z-index: 1;
+  }
+  .hero-warp-style3 .hero3-shape1 {
+    display: none;
+  }
+  .hero-warp-style3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 80%;
+    background-color: #fff;
+  }
+  .hero-content-style2.style2 {
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+  /*
+  Deserve Warp Style
+  ======================================================*/
+  .deserve-widget .content {
+    padding: 35px 20px 25px 20px;
+  }
+  .deserve-widget .content .icon {
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    top: -25px;
+    line-height: 61px;
+    font-size: 25px;
+  }
+  .deserve-widget .content h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  /*
+  Last About Warp Style
+  ======================================================*/
+  .last-about-content {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .last-about-content h2 {
+    margin-bottom: 10px;
+  }
+  .last-about-content p {
+    margin-bottom: 20px;
+  }
+  .last-about-content .living-warp {
+    display: inline-block !important;
+    margin-bottom: 10px;
+  }
+  .last-about-content .living-warp ul {
+    margin-bottom: 15px;
+  }
+  .last-about-content .living-warp ul li {
+    padding-left: 12px;
+    font-size: 16px;
+  }
+  .last-about-content .living-warp ul li:last-child {
+    padding-left: 0;
+  }
+  .last-about-content .living-warp ul li .icon {
+    width: 55px;
+    height: 55px;
+    line-height: 65px;
+    font-size: 25px;
+  }
+  .last-about-content .last-about-list ul {
+    margin-bottom: 20px;
+  }
+  .last-about-content .last-about-list ul li {
+    padding-right: 20px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .last-about-content .last-about-list ul li i {
+    top: 3px;
+  }
+  .last-about-image {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .last-about-image .last-about2 {
+    display: none;
+  }
+  .last-about-image .last-about3 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 25px;
+  }
+  /*
+  Application Warp Style
+  ======================================================*/
+  .application-widget .style2 {
+    border: solid 1px #f1e5e5;
+  }
+  /*
+  Team Warp Style
+  ======================================================*/
+  .team-slider-warp .swiper-btn .swiper-button-next,
+  .team-slider-warp .swiper-btn .swiper-button-prev {
+    position: relative;
+    top: auto;
+    bottom: 0;
+    margin-top: 30px;
+  }
+  /*
+  Benefit Warp Style
+  ======================================================*/
+  .last-benefit-image {
+    position: relative;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .last-benefit-image .benefit5 {
+    margin-bottom: 25px;
+  }
+  .last-benefit-image .benefit-round {
+    padding: 55px 20px;
+    transform: translateY(35px);
+  }
+  .last-benefit-image .benefit-round h2 {
+    font-size: 30px;
+    margin-bottom: -5px;
+  }
+  .col-lg-7:nth-child(1) .image {
+    margin-left: 0;
+  }
+  .col-lg-5:nth-child(2) .image {
+    margin-right: 0;
+  }
+  .benefit-content.style2 p {
+    margin-bottom: 20px;
+  }
+  .benefit-content.style2 ul li {
+    margin-bottom: 15px;
+  }
+  /*
+  Recent Warp Style
+  ======================================================*/
+  .recent-slider-warp .swiper-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .recent-slider-warp .swiper-btn .swiper-button-next,
+  .recent-slider-warp .swiper-btn .swiper-button-prev {
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
+  .recent-slider-warp .swiper-btn .swiper-button-next::before,
+  .recent-slider-warp .swiper-btn .swiper-button-prev::before {
+    border: solid 1px;
+  }
+  .recent-slider-warp .swiper-btn .swiper-button-prev {
+    right: -20px;
+    left: auto;
+  }
+  .recent-slider-warp .swiper-btn .swiper-button-next {
+    right: auto;
+    left: -20px;
+  }
+  .recent-slider-warp .swiper-slide .recent-box .content span {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .recent-slider-warp .swiper-slide .recent-box .content .heading {
+    padding: 20px;
+  }
+  .recent-slider-warp .swiper-slide .recent-box .content .heading h3 {
+    font-size: 18px;
+  }
+  .recent-slider-warp .swiper-slide-active .recent-box .content {
+    opacity: 0;
+    visibility: visible;
+  }
+  /*
+  Inner Hero Warp Style
+  ======================================================*/
+  .inner-hero-content h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .inner-hero-content ul li {
+    font-size: 13px;
+  }
+  .inner-hero-content ul li a {
+    font-size: 13px;
+  }
+  .inner-banner-warp {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /*
+  Testimonial Warp Style
+  ======================================================*/
+  .testimonial-widget .image {
+    margin-bottom: 32px;
+  }
+  .testimonial-widget .content {
+    padding: 20px;
+  }
+  .testimonial-widget .content p {
+    margin-bottom: 15px;
+  }
+  .testimonial-widget .content h4 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  /*
+  Accordion Warp Style
+  ======================================================*/
+  .accordion-widget .accordion-item .accordion-button {
+    font-size: 15px;
+  }
+  .accordion-form-warp .accordion-form-widget {
+    padding: 60px 12px;
+  }
+  .accordion-form-warp .accordion-form-widget h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  /*
+  Apply Warp Style
+  ======================================================*/
+  .apply-widget {
+    padding: 60px 15px;
+  }
+  /*
+  Terms Conditions Warp Style
+  ======================================================*/
+  .terms-conditions .conditions-content h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .visa-details-big-warp .content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .visa-details-big-warp .image {
+    margin-bottom: 20px;
+  }
+  .visa-details-big-warp .benefit-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .visa-details-big-warp .benefit-details ul {
+    margin-bottom: 20px;
+  }
+  .visa-details-big-warp .benefit-details ul li {
+    margin-bottom: 12px;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+  .visa-details-big-warp .agreements h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .visa-details-big-warp .rehearsal h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .visa-details-big-warp .question {
+    margin-bottom: 30px;
+  }
+  .visa-details-big-warp .question h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .visa-details-big-warp .choose h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .visa-details-big-warp .closest h3 {
+    font-size: 20px;
+  }
+  .visa-details-small-warp {
+    padding-right: 0;
+  }
+  .visa-details-small-warp .all-boxes {
+    padding: 25px;
+  }
+  .visa-details-small-warp .all-boxes h3 {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  .visa-details-small-warp .visa-type ul li {
+    margin-bottom: 14px;
+  }
+  .visa-details-small-warp .visa-type ul li a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .visa-details-small-warp .consulting .form-control {
+    height: 45px;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+  }
+  .country-widget {
+    padding: 0 15px;
+  }
+  .country-widget .icon-content {
+    padding: 20px 15px;
+    top: -20px;
+  }
+  .country-widget .icon-content ul li .icon {
+    width: 60px;
+    height: 60px;
+    padding: 12px;
+  }
+  .country-widget .content {
+    padding-right: 15px;
+  }
+  .blog-big-warp .content {
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+  }
+  .blog-big-warp .content ul {
+    margin-bottom: 5px;
+  }
+  .blog-big-warp .content ul li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  .blog-big-warp .content h4 {
+    font-size: 18px;
+  }
+  .blog-big-warp .tag-share {
+    margin-bottom: 30px;
+    margin-top: 25px;
+    display: block !important;
+  }
+  .blog-big-warp .tag-share .tag {
+    margin-bottom: 20px;
+  }
+  .blog-big-warp .tag-share .tag ul li {
+    padding-left: 5px;
+  }
+  .blog-big-warp .tag-share .tag ul li h3 {
+    margin-bottom: 0;
+    padding-left: 5px;
+    position: relative;
+    top: 2px;
+    font-size: 18px;
+  }
+  .blog-big-warp .tag-share .tag ul li a {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  .blog-big-warp .tag-share .share ul li h3 {
+    padding-left: 5px;
+    top: 2px;
+    font-size: 18px;
+  }
+  .blog-big-warp .comments-warp h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .blog-big-warp .comments-warp .comments .image {
+    position: relative;
+  }
+  .blog-big-warp .comments-warp .comments .comment-content {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .blog-big-warp .leave-warp {
+    margin-bottom: 30px;
+  }
+  .blog-small-warp {
+    padding-right: 0;
+  }
+  .blog-small-warp .input-box .form-control {
+    height: 50px;
+    font-size: 14px;
+  }
+  .blog-small-warp .input-box .default-btn {
+    padding: 12px 14px 15px 14px;
+  }
+  .blog-small-warp .all-boxes {
+    padding: 20px;
+  }
+  .blog-small-warp .all-boxes h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .blog-small-warp .post-box .blog-post .thumb {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+  }
+  .blog-small-warp .post-box .blog-post .thumb .full-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+  }
+  .blog-small-warp .post-box .post-content p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .blog-small-warp .post-box .post-content h5 {
+    font-size: 15px;
+  }
+  .blog-small-warp .tags ul li a {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  .contact-content {
+    margin-bottom: 30px;
+  }
+  .contact-content h4 {
+    font-size: 20px;
+  }
+  .contact-content p {
+    margin-bottom: 25px;
+  }
+  .contact-content .contact-share ul {
+    margin-top: 0;
+  }
+  .contact-content .contact-share ul li h3 {
+    padding-left: 0;
+    top: -2px;
+    font-size: 16px;
+  }
+  .contact-form {
+    bottom: -130px;
+    margin-top: -130px;
+    padding: 25px;
+    margin-right: 0;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /*
+  Top Bar Style
+  ======================================================*/
+  .header-widget {
+    text-align: center;
+  }
+  .header-widget.style2 {
+    justify-content: center;
+    display: flex !important;
+  }
+  .header-widget.style2-header .input-box .search-btn {
+    left: 14px;
+    transform: translateY(-20px);
+  }
+  .header-widget .input-box .search-btn {
+    left: 14px;
+    transform: translateY(-20px);
+  }
+  /*
+  About Warp Style
+  ======================================================*/
+  .about-image .about2 {
+    padding: 0 0 25px 0;
+  }
+  .about-content .about-btn-warp {
+    display: flex !important;
+  }
+  .about-content .about-btn-warp .support {
+    padding-right: 20px;
+    padding-top: 0;
+  }
+  /*
+  Feedback Warp Style
+  ======================================================*/
+  .feedback-widget .content {
+    padding: 15px;
+  }
+  /*
+  Choose Warp Style
+  ======================================================*/
+  .choose-content {
+    padding: 60px 20px 30px 20px;
+  }
+  /*
+  Simple Warp Style
+  ======================================================*/
+  .simple-widget {
+    padding: 25px;
+  }
+  /*
+  Choose Warp Style
+  ======================================================*/
+  .choose-content .choose-support {
+    display: flex !important;
+    margin-bottom: 15px;
+  }
+  /*
+  Question Warp Style
+  ======================================================*/
+  .question-form {
+    padding: 50px;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .question-form h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  /*
+  Last About Warp Style
+  ======================================================*/
+  .last-about-content .living-warp {
+    display: flex !important;
+  }
+  .last-about-content .living-warp ul li {
+    font-size: 15px;
+  }
+  .last-about-image {
+    padding-left: 140px;
+    position: relative;
+    padding-bottom: 70px;
+  }
+  .last-about-image .last-about3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 270px;
+    padding: 10px;
+  }
+  .last-about-image .last-about2 {
+    display: block !important;
+  }
+  /*
+  Application Warp Style
+  ======================================================*/
+  .application-widget.style2 {
+    border: solid 1px #f1e9e9;
+  }
+  .country-widget {
+    padding: 0 30px;
+  }
+  .country-widget .icon-content {
+    padding: 30px 25px;
+  }
+  .country-widget .icon-content ul li .icon {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+  }
+}
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .container.style1 {
+    max-width: 720px;
+  }
+  .container-fluid {
+    max-width: 720px;
+  }
+  .single-section .title {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  .single-section h2 {
+    font-size: 27px;
+  }
+  .section-title .title {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+  .section-title h2 {
+    font-size: 28px;
+  }
+  /*
+  Header Warp Style
+  ======================================================*/
+  .header-widget {
+    text-align: center;
+  }
+  .header-widget.style2 {
+    justify-content: center;
+    display: flex !important;
+  }
+  .header-widget .input-box .search-btn {
+    left: 14px;
+    transform: translateY(-20px);
+  }
+  .header-widget.style2-header .input-box .search-btn {
+    left: 14px;
+    transform: translateY(-20px);
+  }
+  /*
+  Hero Warp Style
+  ======================================================*/
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+  /*
+  About Warp Style
+  ======================================================*/
+  .about-image .about2 {
+    padding: 38px 5px 30px 38px;
+  }
+  .about-content .about-btn-warp {
+    display: flex !important;
+  }
+  .about-content .about-btn-warp .support {
+    padding-right: 20px;
+    padding-top: 0;
+  }
+  /*
+  Service Warp Style
+  ======================================================*/
+  .service-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /*
+  Choose Warp Style
+  ======================================================*/
+  .choose-content {
+    padding: 60px 40px 30px 40px;
+  }
+  .choose-content .choose-support {
+    display: flex !important;
+    margin-bottom: 15px;
+  }
+  /*
+  Benefit Warp Style
+  ======================================================*/
+  .benefit-image {
+    padding-left: 250px;
+    margin-bottom: 0;
+  }
+  .benefit-image .benefit2 {
+    position: absolute;
+    width: 443px;
+    height: 410px;
+    left: 25px;
+    border-radius: 0 190px 0 0;
+    top: 210px;
+  }
+  .benefit-image .benefit3 {
+    display: block !important;
+  }
+  .benefit-image .benefit-card {
+    position: absolute;
+    left: 65px;
+    padding: 30px 40px;
+    width: 270px;
+  }
+  /*
+  Hero Warp Style
+  ======================================================*/
+  .hero-content-style2 h1 {
+    font-size: 32px;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+  /*
+  About Warp Style
+  ======================================================*/
+  .about-style2-image {
+    padding-left: 185px;
+    position: relative;
+    padding-bottom: 200px;
+  }
+  .about-style2-image .about-style2-2 {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    padding: 10px;
+    width: 498px;
+  }
+  .about-style2-image .choose-card {
+    padding: 20px;
+    left: 0;
+  }
+  /*
+  Mission Warp Style
+  ======================================================*/
+  .mission-warp {
+    padding: 15px;
+  }
+  .mission-warp .tags {
+    margin-bottom: 0;
+  }
+  .mission-warp .mission-list {
+    margin-bottom: 0;
+  }
+  .col-lg-5:nth-child(1) .function-box {
+    margin-left: 30px;
+  }
+  .col-lg-7:nth-child(2) .function-box {
+    margin-left: 0px;
+    margin-right: -32px;
+  }
+  /*
+  Question Warp Style
+  ======================================================*/
+  .question-form {
+    padding: 50px;
+  }
+  .question-form h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  /*
+  Last About Warp Style
+  ======================================================*/
+  .last-about-image {
+    padding-left: 140px;
+    position: relative;
+    padding-right: 70px;
+    padding-bottom: 70px;
+  }
+  .last-about-image .last-about3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 340px;
+    height: 350px;
+    padding: 10px;
+  }
+  .last-about-image .last-about2 {
+    display: block !important;
+  }
+  /*
+  Application Warp Style
+  ======================================================*/
+  .application-widget.style2 {
+    border: solid 1px #f1e9e9;
+  }
+  .recent-slider-warp .swiper-slide-active .recent-box .content {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .container.style1 {
+    max-width: 960px;
+  }
+  .container-fluid {
+    max-width: 960px;
+  }
+  .section-title h2 {
+    font-size: 30px;
+  }
+  .single-section .title {
+    font-size: 14px;
+  }
+  .single-section h2 {
+    font-size: 26px;
+  }
+  .default-btn {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+  p {
+    font-size: 15px;
+  }
+  body {
+    font-size: 15px;
+  }
+  /*
+  Header Warp Style
+  ======================================================*/
+  .header-widget .header-contact li {
+    padding-right: 18px;
+    padding-left: 15px;
+    font-size: 13px;
+  }
+  .header-widget .header-contact li:last-child {
+    padding-left: 0;
+  }
+  .header-widget .header-contact li i {
+    top: 1px;
+    font-size: 14px;
+  }
+  .header-widget .header-contact li p {
+    font-size: 12px;
+  }
+  .header-widget .input-box {
+    width: 150px;
+    margin-left: 120px;
+  }
+  .header-widget .input-box .search-btn {
+    left: 40px;
+    font-size: 16px;
+    transform: translateY(-12px);
+  }
+  .header-widget .input-box .form-control {
+    height: 48px;
+    padding-right: 15px;
+    font-size: 13px;
+    margin-right: -30px;
+  }
+  .header-widget .social {
+    margin-right: -135px;
+  }
+  .header-widget .social li {
+    padding-left: 5px;
+  }
+  .header-widget .social li h6 {
+    font-size: 12px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .header-widget .social li i {
+    font-size: 12px;
+  }
+  /*
+  Hero Warp Style
+  ======================================================*/
+  .hero-content {
+    padding-top: 120px;
+    padding-bottom: 220px;
+  }
+  .hero-content h1 {
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+  .hero-content p {
+    margin-bottom: 25px;
+  }
+  /*
+  Immigration Warp Style
+  ======================================================*/
+  .immigration-widget .content {
+    padding: 30px 15px;
+  }
+  .immigration-widget .content span {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .immigration-widget .content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .funfact-box.style3 {
+    margin-left: 0;
+  }
+  .funfact-box.style4 {
+    margin-right: 0;
+  }
+  /*
+  About Warp Style
+  ======================================================*/
+  .about-image .last-image {
+    width: 280px;
+    height: 275px;
+  }
+  .about-image .about2 {
+    padding: 30px 5px 20px 0;
+  }
+  .about-image .about3 {
+    width: 280px;
+    height: 275px;
+    left: 120px;
+  }
+  .about-content {
+    padding-right: 20px;
+  }
+  .about-content h2 {
+    margin-bottom: 10px;
+  }
+  .about-content p {
+    margin-bottom: 20px;
+  }
+  .about-content .about-list {
+    margin-bottom: 25px;
+  }
+  .about-style2-content {
+    margin-left: 0;
+  }
+  /*
+  Application Warp Style
+  ======================================================*/
+  .application-widget {
+    padding: 25px 20px 25px 20px;
+  }
+  .application-widget .heading-icon {
+    margin-bottom: 15px;
+  }
+  .application-widget .heading-icon h3 {
+    margin-bottom: 0;
+    font-size: 17px;
+  }
+  .application-widget .heading-icon .icon {
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    margin-left: 15px;
+    line-height: 66px;
+  }
+  /*
+  Service Warp Style
+  ======================================================*/
+  .service-widget {
+    padding: 0 40px 0 45px;
+  }
+  .service-widget .service-image .service-2 {
+    left: 47px;
+    top: 70px;
+  }
+  .service-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: -80px;
+  }
+  .service-content .service-list li {
+    padding-right: 25px;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  /*
+  Feedback Warp Style
+  ======================================================*/
+  .feedback-widget .content {
+    padding: 20px 20px;
+  }
+  .feedback-widget .content p {
+    line-height: 26px;
+  }
+  .feedback-widget .client .image {
+    width: 70px;
+    height: 70px;
+    margin-left: 12px;
+  }
+  .feedback-widget .client .self h4 {
+    font-size: 16px;
+  }
+  .feedback-widget .client .self span {
+    font-size: 13px;
+  }
+  .feedback-widget .client .icon {
+    margin-left: 0;
+    height: 20px;
+    width: 30px;
+  }
+  /*
+  Choose Warp Style
+  ======================================================*/
+  .choose-content {
+    padding: 70px 30px 70px 20px;
+  }
+  .choose-content h2 {
+    margin-bottom: 10px;
+  }
+  .choose-content p {
+    margin-bottom: 20px;
+  }
+  .choose-content .choose-support ul li {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .choose-content .choose-support ul li .icon {
+    width: 50px;
+    height: 50px;
+    line-height: 61px;
+    font-size: 25px;
+  }
+  .choose-content .choose-list {
+    margin-bottom: 20px;
+  }
+  .choose-content .choose-list ul li {
+    padding-right: 22px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .choose-image .choose-card {
+    padding: 25px;
+    right: 0;
+  }
+  /*
+  Consulting Warp Style
+  ======================================================*/
+  .consulting-slider-warp {
+    position: relative;
+  }
+  .consulting-slider-warp .swiper-horizontal > .swiper-scrollbar,
+  .consulting-slider-warp .swiper-scrollbar.swiper-scrollbar-horizontal {
+    max-width: 660px;
+  }
+  .consulting-slider-warp .swiper-btn .swiper-button-next,
+  .consulting-slider-warp .swiper-btn .swiper-button-prev {
+    top: auto;
+    bottom: -15px;
+  }
+  .consulting-slider-warp .swiper-btn .swiper-button-prev {
+    right: 80px;
+    left: auto;
+  }
+  .consulting-slider-warp .swiper-btn .swiper-button-next {
+    right: auto;
+    left: 80px;
+  }
+  /*
+  Benefit Warp Style
+  ======================================================*/
+  .benefit-image {
+    padding-left: 170px;
+    position: relative;
+  }
+  .benefit-image .benefit2 {
+    width: 310px;
+    height: 300px;
+  }
+  .benefit-content p {
+    margin-bottom: 20px;
+  }
+  .benefit-content ul li {
+    padding-right: 90px;
+    margin-bottom: 20px;
+  }
+  .benefit-content ul li .icon {
+    height: 70px;
+    line-height: 80px;
+    width: 70px;
+    font-size: 30px;
+  }
+  .benefit-content ul li h5 {
+    font-size: 18px;
+  }
+  /*
+  Blog Warp Style
+  ======================================================*/
+  .blog-card .content {
+    padding: 30px 15px 20px 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .blog-card .content .self {
+    margin-bottom: 12px;
+  }
+  .blog-card .content .self li {
+    font-size: 13px;
+  }
+  .blog-card .content .self li a {
+    font-size: 13px;
+  }
+  .blog-card .content h3 {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  .blog-card .content .comment::before {
+    right: 0;
+    top: -14px;
+    height: 1px;
+    width: 100%;
+  }
+  /*
+  PArtner Warp Style
+  ======================================================*/
+  .inner-partner {
+    padding: 70px;
+  }
+  /*
+  Footer Warp Style
+  ======================================================*/
+  .footer-widget .first-tag {
+    padding-left: 10px;
+  }
+  .footer-widget h3 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    padding-right: 8px;
+  }
+  .footer-widget h3::before {
+    top: 5px;
+    height: 13px;
+    width: 2px;
+  }
+  .footer-widget .input-box .form-control {
+    height: 55px;
+    padding-right: 15px;
+    font-size: 13px;
+  }
+  .footer-widget .input-box .default-btn {
+    padding: 13px;
+  }
+  .col-lg-2:nth-child(2) .footer-widget {
+    margin-right: -28px;
+  }
+  .col-lg-4:nth-child(3) .footer-widget {
+    margin-right: -5px;
+    margin-left: 38px;
+  }
+  /*
+  Hero Style2 Warp Style
+  ======================================================*/
+  .hero-content-style2 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .hero-content-style2 h1 {
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+  .hero-content-style2 p {
+    margin-bottom: 25px;
+  }
+  /*
+  Simple Warp Style
+  ======================================================*/
+  .simple-widget .icon-content {
+    padding: 25px 20px;
+  }
+  .simple-widget .icon-content ul li .icon {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    line-height: 90px;
+  }
+  .simple-widget .content h3 {
+    font-size: 18px;
+  }
+  /*
+  About Style2 Warp Style
+  ======================================================*/
+  .about-style2-image .about-style2-2 {
+    width: 320px;
+  }
+  .about-style2-content .professional-warp .image {
+    display: none;
+  }
+  /*
+  Offer Warp Style
+  ======================================================*/
+  .offer-card {
+    padding: 60px 15px 25px 15px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  /*
+  Function Warp Style
+  ======================================================*/
+  .function-box .content {
+    bottom: 20px;
+    right: 20px;
+  }
+  .function-box .content h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .function-box .content p {
+    font-size: 12px;
+  }
+  .function-box .content span {
+    font-size: 13px;
+  }
+  /*
+  Question Warp Style
+  ======================================================*/
+  .question-form {
+    padding: 30px;
+    margin-right: 15px;
+  }
+  .question-form h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  /*
+  Success Warp Style
+  ======================================================*/
+  .funfact-box h1 {
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+  /*
+  Hero Style3 Warp Style
+  ======================================================*/
+  .hero-content-style2.style2 {
+    padding-right: 0;
+  }
+  /*
+  Deserve Warp Style
+  ======================================================*/
+  .deserve-widget .content {
+    margin-right: 20px;
+    padding: 55px 20px 25px 20px;
+  }
+  /*
+  Last About Warp Style
+  ======================================================*/
+  .last-about-content .living-warp ul li {
+    padding-left: 12px;
+    font-size: 16px;
+  }
+  .last-about-content .living-warp ul li:last-child {
+    padding-left: 0;
+  }
+  .last-about-content .living-warp ul li .icon {
+    width: 55px;
+    height: 55px;
+    line-height: 68px;
+    font-size: 27px;
+  }
+  .last-about-image {
+    padding-right: 35px;
+    padding-left: 10px;
+    padding-bottom: 70px;
+  }
+  /*
+  Last Benefit Warp Style
+  ======================================================*/
+  .last-benefit-image {
+    padding-left: 20px;
+  }
+  .benefit-content h2 {
+    margin-bottom: 12px;
+  }
+  .benefit-content.style2 p {
+    margin-bottom: 20px;
+  }
+  .benefit-content.style2 ul li {
+    margin-bottom: 20px;
+  }
+  .benefit-content.style2 ul li p {
+    font-size: 14px;
+  }
+  .recent-slider-warp .swiper-btn .swiper-button-next {
+    right: auto;
+    left: 0;
+  }
+  .recent-slider-warp .swiper-btn .swiper-button-prev {
+    right: 0;
+    left: auto;
+  }
+  .recent-slider-warp .swiper-slide .recent-box .content span {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  .recent-slider-warp .swiper-slide .recent-box .content .heading {
+    padding: 20px;
+  }
+  .recent-slider-warp .swiper-slide .recent-box .content .heading h3 {
+    font-size: 18px;
+  }
+  .visa-details-small-warp .all-boxes {
+    background: rgba(3, 43, 102, 0.03);
+    padding: 25px;
+  }
+  .visa-details-small-warp .all-boxes h3 {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  .visa-details-small-warp .visa-type ul li {
+    margin-bottom: 12px;
+  }
+  .visa-details-small-warp .visa-type ul li a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .visa-details-small-warp .consulting .form-control {
+    height: 45px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding-right: 15px;
+  }
+  .visa-details-small-warp .consulting textarea {
+    height: 100px !important;
+  }
+  .blog-big-warp .tag-share .tag ul li h3 {
+    padding-left: 0;
+    top: 2px;
+    font-size: 16px;
+  }
+  .blog-big-warp .tag-share .tag ul li a {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  .blog-big-warp .tag-share .share ul li a {
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
+  }
+  .blog-big-warp .tag-share .share ul li h3 {
+    padding-left: 0;
+    top: -2px;
+    font-size: 18px;
+  }
+  .blog-big-warp .comments-warp h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .blog-big-warp .comments-warp .comments .comment-content {
+    padding-left: 75px;
+  }
+  .blog-small-warp .all-boxes {
+    padding: 25px;
+  }
+  .blog-small-warp .all-boxes h3 {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+  .blog-small-warp .post-box .blog-post .thumb {
+    width: 70px;
+    height: 70px;
+    margin-left: 14px;
+  }
+  .blog-small-warp .post-box .blog-post .thumb .full-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+  }
+  .blog-small-warp .post-box .blog-post .post-content h5 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .blog-small-warp .tags ul li a {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+  .container.style1 {
+    max-width: 1140px;
+  }
+  .container-fluid {
+    max-width: 1140px;
+  }
+  body {
+    font-size: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .section-title h2 {
+    font-size: 30px;
+    letter-spacing: -0.01em;
+  }
+  .single-section h2 {
+    font-size: 30px;
+  }
+  /*
+  Header Warp Style
+  ======================================================*/
+  .header-widget .header-contact li {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 13px;
+  }
+  .header-widget .header-contact li p {
+    font-size: 13px;
+  }
+  .header-widget .input-box {
+    width: 215px;
+  }
+  /*
+  Hero Warp Style
+  ======================================================*/
+  .hero-content {
+    padding-top: 130px;
+    padding-bottom: 230px;
+    position: relative;
+  }
+  .hero-content h1 {
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+  .hero-content p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+  }
+  /*
+  Immigration Warp Style
+  ======================================================*/
+  .immigration-widget .content {
+    padding: 35px 20px;
+  }
+  .immigration-widget .content span {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .immigration-widget .content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  /*
+  About Warp Style
+  ======================================================*/
+  .about-content p {
+    margin-bottom: 20px;
+  }
+  /*
+  Application Warp Style
+  ======================================================*/
+  .application-widget {
+    padding: 30px 20px 25px 20px;
+  }
+  .application-widget .heading-icon {
+    margin-bottom: 12px;
+  }
+  .application-widget .heading-icon .icon {
+    margin-left: 15px;
+  }
+  /*
+  Service Warp Style
+  ======================================================*/
+  .service-widget {
+    padding: 0 60px 0 50px;
+  }
+  .service-content h2 {
+    font-size: 27px;
+    margin-bottom: 25px;
+    margin-left: -50px;
+  }
+  /*
+  Feedback Warp Style
+  ======================================================*/
+  .feedback-widget .content {
+    padding: 25px 20px;
+  }
+  .feedback-widget .client .image {
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+  }
+  .feedback-widget .client .self h4 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .feedback-widget .client .icon {
+    margin-left: 10px;
+    width: 40px;
+  }
+  /*
+  Choose Warp Style
+  ======================================================*/
+  .choose-content {
+    padding: 80px 40px 80px 35px;
+  }
+  .choose-content p {
+    margin-bottom: 20px;
+  }
+  .choose-content .choose-support {
+    margin-bottom: 20px;
+  }
+  .choose-content .choose-support ul li {
+    padding-left: 12px;
+    font-size: 16px;
+  }
+  .choose-content .choose-support ul li .icon {
+    width: 60px;
+    height: 60px;
+    line-height: 74px;
+    font-size: 26px;
+  }
+  .choose-content .choose-list {
+    margin-bottom: 20px;
+  }
+  .choose-content .choose-list ul li {
+    padding-right: 25px;
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+  .funfact-box.style3 {
+    margin-left: 0;
+  }
+  .funfact-box.style4 {
+    margin-right: 0;
+  }
+  /*
+  Consulting Warp Style
+  ======================================================*/
+  .consulting-slider-warp {
+    position: relative;
+  }
+  .consulting-slider-warp .swiper-horizontal > .swiper-scrollbar,
+  .consulting-slider-warp .swiper-scrollbar.swiper-scrollbar-horizontal {
+    max-width: 860px;
+  }
+  .consulting-slider-warp .swiper-btn .swiper-button-next,
+  .consulting-slider-warp .swiper-btn .swiper-button-prev {
+    top: auto;
+    bottom: -15px;
+  }
+  .consulting-slider-warp .swiper-btn .swiper-button-prev {
+    right: 50px;
+    left: auto;
+  }
+  .consulting-slider-warp .swiper-btn .swiper-button-next {
+    right: auto;
+    left: 50px;
+  }
+  /*
+  Benefit Warp Style
+  ======================================================*/
+  .benefit-image .benefit2 {
+    width: 330px;
+    height: 295px;
+    left: 25px;
+    top: 260px;
+  }
+  /*
+  Partner Warp Style
+  ======================================================*/
+  .inner-partner {
+    padding: 80px 30px;
+  }
+  /*
+  Blog Warp Style
+  ======================================================*/
+  .blog-card .content {
+    padding: 30px 20px 25px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .blog-card .content .self {
+    margin-bottom: 12px;
+  }
+  .blog-card .content h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  /*
+  Footer Warp Style
+  ======================================================*/
+  .footer-widget .first-tag {
+    padding-left: 20px;
+  }
+  .footer-widget h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+    padding-right: 10px;
+  }
+  .footer-widget h3::before {
+    top: 5px;
+    height: 16px;
+  }
+  .col-lg-4:nth-child(3) .footer-widget {
+    margin-right: -35px;
+    padding-left: 65px;
+  }
+  /*
+  Hero Style2 Warp Style
+  ======================================================*/
+  .hero-content-style2 {
+    padding-top: 210px;
+    padding-bottom: 210px;
+  }
+  .hero-content-style2 h1 {
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+  .hero-content-style2 p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+  }
+  /*
+  About Style2 Warp Style
+  ======================================================*/
+  .about-style2-image .about-style2-2 {
+    width: 400px;
+  }
+  .about-style2-content .professional-warp .icon {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+  }
+  .about-style2-content .professional-warp .icon .profesonal-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 42px;
+    line-height: 97px;
+    margin-left: 15px;
+  }
+  .about-style2-content .professional-warp .content h1 {
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+  .about-style2-content .professional-warp .content p {
+    font-size: 14px;
+  }
+  /*
+  Success Warp Style
+  ======================================================*/
+  .funfact-box h1 {
+    font-size: 45px;
+    margin-bottom: 0;
+  }
+  /*
+  Question Warp Style
+  ======================================================*/
+  .question-form {
+    padding: 50px;
+    margin-right: 0;
+  }
+  /*
+  Hero Style3 Warp Style
+  ======================================================*/
+  .hero-content-style2.style2 {
+    padding-right: 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  /*
+  Last About Warp Style
+  ======================================================*/
+  .last-about-content .living-warp ul li {
+    padding-left: 18px;
+  }
+  .last-about-content .living-warp ul li:last-child {
+    padding-left: 0;
+  }
+  .last-about-image {
+    padding-right: 50px;
+    padding-left: 85px;
+  }
+  .recent-slider-warp .swiper-btn .swiper-button-next {
+    right: auto;
+    left: 0;
+  }
+  .recent-slider-warp .swiper-btn .swiper-button-prev {
+    right: 0;
+    left: auto;
+  }
+  .recent-slider-warp .swiper-slide .recent-box .content span {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  .recent-slider-warp .swiper-slide .recent-box .content .heading {
+    padding: 20px;
+  }
+  .recent-slider-warp .swiper-slide .recent-box .content .heading h3 {
+    font-size: 18px;
+  }
+}
+/* Min width 1400px to Max width 1499px */
+@media only screen and (min-width: 1400px) and (max-width: 1799px) {
+  .container {
+    max-width: 1320px;
+  }
+  .container.style1 {
+    max-width: 1320px;
+  }
+  .container-fluid {
+    max-width: 1320px;
+  }
+  /*
+  Hero Warp Style
+  ======================================================*/
+  .hero-content {
+    padding-top: 180px;
+    padding-bottom: 280px;
+    position: relative;
+  }
+  .hero-content h1 {
+    font-size: 55px;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+  /*
+  Choose Warp Style
+  ======================================================*/
+  .choose-content {
+    padding: 100px 50px 100px 10px;
+    background: #F9F9F9;
+  }
+  /*
+  Hero Style3 Warp Style
+  ======================================================*/
+  .hero-content-style2.style2 {
+    padding-right: 40px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .hero-content-style2.style2 h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .recent-slider-warp .swiper-btn .swiper-button-next {
+    right: auto;
+    left: 0;
+  }
+  .recent-slider-warp .swiper-btn .swiper-button-prev {
+    right: 0;
+    left: auto;
+  }
+  .funfact-box.style3 {
+    margin-left: 0;
+  }
+  .funfact-box.style4 {
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=responsive.css.map */
