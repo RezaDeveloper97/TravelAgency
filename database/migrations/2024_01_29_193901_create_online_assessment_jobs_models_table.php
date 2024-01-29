@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('online_assessment_jobs_models', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('online_assessment_id');
             $table->text('job-name')->nullable();
             $table->text('work-experience')->nullable();
             $table->text('employment-period')->nullable();

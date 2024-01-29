@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('online_assessment_visas_models', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('online_assessment_id');
             $table->text('visas')->nullable();
             $table->text('type-visa')->nullable();
             $table->text('enter-date')->nullable();

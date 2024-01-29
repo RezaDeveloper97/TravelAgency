@@ -50,17 +50,21 @@
                         </tr>
                     </tfoot>
                     <tbody>
-                        <tr>
-                            <td>مهسا امیری</td>
-                            <td>09121234567</td>
-                            <td>test@gmail.com</td>
-                            <td>1399/04/25</td>
-                            <td>
-                                <button class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></button>
-                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></button>
-                            </td>
-                        </tr>
-
+                        @php
+                            $onlineAssessmentModel = \App\Models\onlineAssessmentModel::all();
+                        @endphp
+                        @foreach($onlineAssessmentModel as $row)
+                            <tr>
+                                <td>{{ $row->fnamelname }}</td>
+                                <td>{{ $row->whatsapp }}</td>
+                                <td>{{ $row['active-email'] }}</td>
+                                <td>{{ $row->created_at }}</td>
+                                <td>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></button>
+                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></button>
+                                </td>
+                            </tr>
+                        @endforeach 
                     </tbody>
                 </table>
             </div>
