@@ -28,7 +28,7 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label">نام و نام خانوادگی</label>
-                            <input name="fnamelname" type="text" class="form-control" id="lastname"    />
+                            <input required name="fnamelname" type="text" class="form-control" id="lastname"    />
                         </div>
                     </div>
                     <div class="col-lg-3">
@@ -105,6 +105,10 @@
                             <input name="edu-gap" type="text" class="form-control"     />
                         </div>
                     </div>
+                    <hr class="my-3">
+                    <p>سوابق شغلی خود را وارد کنید <button type="button" onclick="addJobsToRow()" class="btn btn-primary btn-sm">+&nbsp;افزودن موارد بیشتر</button></p>
+                    <div id="rowJobs">
+                        <div class="row">
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> عنوان شغل شما </label>
@@ -129,6 +133,9 @@
                             <input name="management-experience" type="text" class="form-control"     />
                         </div>
                     </div>
+                </div>
+                </div>
+                <hr class="my-3">
                     <div class="col-lg-4">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> سابقه مدیریت با پروانه مطب یا جواز کسب </label>
@@ -148,7 +155,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3">
-                            <label for="firstName" class="form-label">  دارائی غیر نقدی شما</label>
+                            <label for="firstName" class="form-label">دارائی غیر نقدی شما</label>
                             <input name="non-cash-assets" type="text" class="form-control"     />
                         </div>
                     </div>
@@ -181,13 +188,13 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> تلفن تماس ( واتس اپ )</label>
-                            <input name="whatsapp" type="text" class="form-control" dir="ltr"     />
+                            <input required name="whatsapp" type="text" class="form-control" dir="ltr"     />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> آدرس ايميل فعال</label>
-                            <input name="active-email" type="text" class="form-control" dir="ltr"     />
+                            <input required name="active-email" type="text" class="form-control" dir="ltr"     />
                         </div>
                     </div>
                     <div class="col-lg-12">
@@ -290,7 +297,48 @@
             `);
         }
 
+        function addJobsToRow(){
+            $('#rowJobs').append(`
+<div class="row">
+                    <div class="col-lg-3">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label"> عنوان شغل شما </label>
+                            <input name="job-name" type="text" class="form-control"     />
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label"> سوابق شغلی</label>
+                            <input name="work-experience" type="text" class="form-control"     />
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label"> مدت اشتغال </label>
+                            <input name="employment-period" type="text" class="form-control"     />
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label" style="font-size:0.9rem"> سابقه مدیریت یا بیزینس و اینکه چند درصد سهام به نام متقاضی است </label>
+                            <input name="management-experience" type="text" class="form-control"     />
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                    <label for="exit-date" class="form-label">عملیات</label>
+                    <button type="button" class="btn btn-danger form-control" onclick="removeCountryToRow(this)">حذف</button>
+                </div>
+                   
+                </div>
+                `);
+
+        }
+
         function removeCountryToRow(that) {
+            $(that).closest('.row').remove();
+        }
+
+        function removeJobsToRow(that) {
             $(that).closest('.row').remove();
         }
     </script>
