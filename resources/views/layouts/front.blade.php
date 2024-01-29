@@ -466,6 +466,7 @@
     <!-- Links of JS File -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="{{ asset('front-assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('front-assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('front-assets/js/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('front-assets/js/scrollCue.min.js') }}"></script>
 

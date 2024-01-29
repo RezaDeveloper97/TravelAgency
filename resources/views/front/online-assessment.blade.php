@@ -193,7 +193,10 @@
                     <div class="col-lg-12">
                         <div class="mb-3">
                             <hr />
-                            <label for="firstName" class="form-label">چه ویزا هایی دریافت کردین و‌ به چه کشور هایی سفر داشتید؟ <a href="#" class="btn btn-primary btn-sm">+&nbsp;افزودن موارد بیشتر</a></label>
+                            <label for="firstName" class="form-label">
+                                چه ویزا هایی دریافت کردین و‌ به چه کشور هایی سفر داشتید؟ 
+                                <button class="btn btn-primary btn-sm">+&nbsp;افزودن موارد بیشتر</button>
+                            </label>
                             <div class="row">
                                 <div class="col-lg-3">
                                     <label for="firstName" class="form-label">کشور</label>
