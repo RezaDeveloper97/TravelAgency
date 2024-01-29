@@ -45,6 +45,14 @@ Route::get('/posts/add', function () {
     return view('panel.post-add'); 
 })->name('panel.add');
 
+Route::get('/forms/assessment', function () { 
+    return view('panel.assessment'); 
+})->name('forms.assessment');
+
+Route::get('/forms/assessment-view', function () { 
+    return view('panel.assessment-view'); 
+})->name('forms.assessment-view');
+
 Route::get('/blank', function () { 
     return view('front.blank'); 
 })->name('front.blank');

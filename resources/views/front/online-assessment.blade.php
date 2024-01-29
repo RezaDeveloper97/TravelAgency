@@ -175,7 +175,7 @@
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> چگونگی آشنایی با ما </label>
                             <select name="get-know" class="form-select" id="country" required>
-                                <option >انتخاب کنید...</option>
+                                <option>انتخاب کنید...</option>
                                 <option>گوگل</option>
                                 <option>تلگرام</option>
                                 <option>اینستاگرام</option>
