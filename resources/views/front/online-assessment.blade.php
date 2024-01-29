@@ -28,19 +28,19 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label">نام و نام خانوادگی</label>
-                            <input type="text" class="form-control" id="lastname" placeholder="" value="" required="" />
+                            <input name="fnamelname" type="text" class="form-control" id="lastname" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> سن </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="age" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> تاهل </label>
-                            <select class="form-select" id="country" required>
+                            <select name="status" class="form-select" id="country" required>
                                 <option value="">انتخاب کنید...</option>
                                 <option>مجرد</option>
                                 <option>متاهل</option>
@@ -50,13 +50,13 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> ساکن </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="location" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> سطح زبان انگلیسی </label>
-                            <select class="form-select" id="country" required>
+                            <select name="en-level" class="form-select" id="country" required>
                                 <option value="">انتخاب کنید...</option>
                                 <option>هیچ</option>
                                 <option>در حال خواندن هستم</option>
@@ -67,13 +67,13 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> نمره مدرک زبان انگلیسی </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" disabled />
+                            <input name="en-score" type="text" class="form-control" id="firstName" placeholder="" value="" required="" disabled />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label">تسلط به زبان فرانسه </label>
-                            <select class="form-select" id="country" required>
+                            <select name="fr-level" class="form-select" id="country" required>
                                 <option value="">انتخاب کنید...</option>
                                 <option>هیچ</option>
                                 <option>در حال خواندن هستم</option>
@@ -84,55 +84,55 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> مدرک و نمره زبان فرانسه </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" disabled />
+                            <input name="fr-score" type="text" class="form-control" id="firstName" placeholder="" value="" required="" disabled />
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> رشته تحصیلی </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="field-study" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3">
                             <label for="firstName" class="form-label">گرایش تحصیلی </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="academic-orientation" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3">
                             <label for="firstName" class="form-label" >گپ تحصیلی (مدت زمانی که از پایان تحصیل گذشته) </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="edu-gap" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> عنوان شغل شما </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="job-name" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> سوابق شغلی</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="work-experience" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-2">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> مدت اشتغال </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="employment-period" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3">
                             <label for="firstName" class="form-label" style="font-size:0.9rem"> سابقه مدیریت یا بیزینس و اینکه چند درصد سهام به نام متقاضی است </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="management-experience" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> سابقه مدیریت با پروانه مطب یا جواز کسب </label>
-                            <select class="form-select" id="country" required>
+                            <select name="business-license" class="form-select" id="country" required>
                                 <option value="">انتخاب کنید...</option>
                                 <option>مدیر ارشد</option>
                                 <option>مدیر میان</option>
@@ -143,19 +143,19 @@
                     <div class="col-lg-4">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> دارائی نقدی شما</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="cash-assets" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3">
                             <label for="firstName" class="form-label">  دارائی غیر نقدی شما</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
+                            <input name="non-cash-assets" type="text" class="form-control" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> تمایل شما از چه روشی مهاجرتی است </label>
-                            <select class="form-select" id="country" required>
+                            <select name="migration-method" class="form-select" id="country" required>
                                 <option value="">انتخاب کنید...</option>
                                 <option>تحصیلی</option>
                                 <option>کاری</option>
@@ -167,7 +167,7 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> چگونگی آشنایی با ما </label>
-                            <select class="form-select" id="country" required>
+                            <select name="get-know" class="form-select" id="country" required>
                                 <option value="">انتخاب کنید...</option>
                                 <option>گوگل</option>
                                 <option>تلگرام</option>
@@ -181,13 +181,13 @@
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> تلفن تماس ( واتس اپ )</label>
-                            <input type="text" class="form-control" dir="ltr" id="firstName" placeholder="" value="" required="" />
+                            <input name="whatsapp" type="text" class="form-control" dir="ltr" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="mb-3">
                             <label for="firstName" class="form-label"> آدرس ايميل فعال</label>
-                            <input type="text" class="form-control" dir="ltr" id="firstName" placeholder="" value="" required="" />
+                            <input name="active-email" type="text" class="form-control" dir="ltr" id="firstName" placeholder="" value="" required="" />
                         </div>
                     </div>
                     <div class="col-lg-12">
@@ -200,11 +200,11 @@
                             <div class="row">
                                 <div class="col-lg-3">
                                     <label for="firstName" class="form-label">کشور</label>
-                                    <input type="text" class="form-control" dir="ltr" id="firstName" placeholder="" value="" required="" />
+                                    <input name="visas" type="text" class="form-control" dir="ltr" id="firstName" placeholder="" value="" required="" />
                                 </div>
                                 <div class="col-lg-3">
                                     <label for="firstName" class="form-label"> نوع ویزا</label>
-                                    <select class="form-select" id="country" required>
+                                    <select name="type-visa" class="form-select" id="country" required>
                                         <option value="">انتخاب کنید...</option>
                                         <option>توریستس </option>
                                         <option>کاری</option>
@@ -214,11 +214,11 @@
                                 </div>
                                 <div class="col-lg-3">
                                     <label for="firstName" class="form-label">تاریخ ورود</label>
-                                    <input type="text" class="form-control" dir="ltr" id="firstName" placeholder="" value="" required="" />
+                                    <input name="enter-date" type="text" class="form-control" dir="ltr" id="firstName" placeholder="" value="" required="" />
                                 </div>
                                 <div class="col-lg-3">
                                     <label for="firstName" class="form-label">تاریخ خروج</label>
-                                    <input type="text" class="form-control" dir="ltr" id="firstName" placeholder="" value="" required="" />
+                                    <input name="exit-date" type="text" class="form-control" dir="ltr" id="firstName" placeholder="" value="" required="" />
                                 </div>
                             </div>
                         </div>
@@ -226,7 +226,7 @@
                     <div class="col-lg-12">
                         <div class="mb-3">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <textarea name="description" class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
                                 <label for="floatingTextarea2">توضیحات</label>
                             </div>
                         </div>
@@ -234,7 +234,7 @@
                     <div class="col-lg-12">
                         <div class="mb-3">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <textarea name="tip" class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
                                 <label for="floatingTextarea2">آیا نکته خاصی برای وکیل و مشاور خود‌ دارید؟</label>
                             </div>
                         </div>
@@ -243,7 +243,7 @@
                         بعد از تکمیل و اطمینان از صحت فرم‌ بالا ، دکمه ثبت را بزنید تا در ۴۸ ساعت آینده مشاور اختصاصی شما ارتباط شرکت را با شما آغاز کند .
                     </div>
                     <div class="d-flex justify-content-center">
-                        <a href="contact.html" class="default-btn my-3"><span>ثبت</span> </a>
+                        <a href="#" class="default-btn my-3"><span>ثبت</span> </a>
                     </div>
                 </div>
         </div>
