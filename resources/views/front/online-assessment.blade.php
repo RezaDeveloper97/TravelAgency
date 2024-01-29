@@ -288,6 +288,10 @@
                 </div>
             </div>
             `);
-        };
+        }
+
+        function removeCountryToRow(that) {
+            $(that).closest('.row').remove();
+        }
     </script>
 @endprepend
