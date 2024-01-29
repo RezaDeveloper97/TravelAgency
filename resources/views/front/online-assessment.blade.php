@@ -180,75 +180,74 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
-                            <div class="mb-3">
-                                <label for="firstName" class="form-label"> تلفن تماس ( واتس اپ )</label>
-                                <input name="whatsapp" type="text" class="form-control" dir="ltr"     />
-                            </div>
+                    <div class="col-lg-3">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label"> تلفن تماس ( واتس اپ )</label>
+                            <input name="whatsapp" type="text" class="form-control" dir="ltr"     />
                         </div>
-                        <div class="col-lg-3">
-                            <div class="mb-3">
-                                <label for="firstName" class="form-label"> آدرس ايميل فعال</label>
-                                <input name="active-email" type="text" class="form-control" dir="ltr"     />
-                            </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label"> آدرس ايميل فعال</label>
+                            <input name="active-email" type="text" class="form-control" dir="ltr"     />
                         </div>
-                        <div class="col-lg-12">
-                            <div class="mb-3">
-                                <hr />
-                                <label for="firstName" class="form-label">
-                                    چه ویزا هایی دریافت کردین و‌ به چه کشور هایی سفر داشتید؟ 
-                                    <button type="button" onclick="addCountryToRow()" class="btn btn-primary btn-sm">+&nbsp;افزودن موارد بیشتر</button>
-                                </label>
-                                <div id="rowCountries">
-                                    <div class="row">
-                                        <div class="col-lg-3">
-                                            <label for="visas" class="form-label">کشور</label>
-                                            <input name="visas[]" type="text" class="form-control" dir="ltr"     />
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <label for="type-visa" class="form-label"> نوع ویزا</label>
-                                            <select name="type-visa[]" class="form-select" required>
-                                                <option >انتخاب کنید...</option>
-                                                <option>توریستس </option>
-                                                <option>کاری</option>
-                                                <option>تجاری </option>
-                                                <option>تحصیلی </option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <label for="enter-date" class="form-label">تاریخ ورود</label>
-                                            <input name="enter-date[]" type="text" class="form-control" dir="ltr"     />
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <label for="exit-date" class="form-label">تاریخ خروج</label>
-                                            <input name="exit-date[]" type="text" class="form-control" dir="ltr"     />
-                                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <hr />
+                            <label for="firstName" class="form-label">
+                                چه ویزا هایی دریافت کردین و‌ به چه کشور هایی سفر داشتید؟ 
+                                <button type="button" onclick="addCountryToRow()" class="btn btn-primary btn-sm">+&nbsp;افزودن موارد بیشتر</button>
+                            </label>
+                            <div id="rowCountries">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <label for="visas" class="form-label">کشور</label>
+                                        <input name="visas[]" type="text" class="form-control" dir="ltr"     />
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="type-visa" class="form-label"> نوع ویزا</label>
+                                        <select name="type-visa[]" class="form-select" required>
+                                            <option >انتخاب کنید...</option>
+                                            <option>توریستس </option>
+                                            <option>کاری</option>
+                                            <option>تجاری </option>
+                                            <option>تحصیلی </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="enter-date" class="form-label">تاریخ ورود</label>
+                                        <input name="enter-date[]" type="text" class="form-control" dir="ltr"     />
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="exit-date" class="form-label">تاریخ خروج</label>
+                                        <input name="exit-date[]" type="text" class="form-control" dir="ltr"     />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="mb-3">
-                                <div class="form-floating">
-                                    <textarea name="description" class="form-control"  id="floatingTextarea2" style="height: 100px"></textarea>
-                                    <label for="floatingTextarea2">توضیحات</label>
-                                </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <textarea name="description" class="form-control"  id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">توضیحات</label>
                             </div>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="mb-3">
-                                <div class="form-floating">
-                                    <textarea name="tip" class="form-control"  id="floatingTextarea2" style="height: 100px"></textarea>
-                                    <label for="floatingTextarea2">آیا نکته خاصی برای وکیل و مشاور خود‌ دارید؟</label>
-                                </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <textarea name="tip" class="form-control"  id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">آیا نکته خاصی برای وکیل و مشاور خود‌ دارید؟</label>
                             </div>
                         </div>
-                        <div class="fw-bold">
-                            بعد از تکمیل و اطمینان از صحت فرم‌ بالا ، دکمه ثبت را بزنید تا در ۴۸ ساعت آینده مشاور اختصاصی شما ارتباط شرکت را با شما آغاز کند .
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <button type="submit" href="#" class="default-btn my-3">ثبت</button>
-                        </div>
+                    </div>
+                    <div class="fw-bold">
+                        بعد از تکمیل و اطمینان از صحت فرم‌ بالا ، دکمه ثبت را بزنید تا در ۴۸ ساعت آینده مشاور اختصاصی شما ارتباط شرکت را با شما آغاز کند .
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="default-btn my-3"><span>ثبت</span> </a>
                     </div>
                 </form>
             </div>
@@ -293,7 +292,48 @@
             `);
         }
 
+        function addJobsToRow(){
+            $('#rowJobs').append(`
+<div class="row">
+                    <div class="col-lg-3">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label"> عنوان شغل شما </label>
+                            <input name="job-name" type="text" class="form-control"     />
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label"> سوابق شغلی</label>
+                            <input name="work-experience" type="text" class="form-control"     />
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label"> مدت اشتغال </label>
+                            <input name="employment-period" type="text" class="form-control"     />
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label" style="font-size:0.9rem"> سابقه مدیریت یا بیزینس و اینکه چند درصد سهام به نام متقاضی است </label>
+                            <input name="management-experience" type="text" class="form-control"     />
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                    <label for="exit-date" class="form-label">عملیات</label>
+                    <button type="button" class="btn btn-danger form-control" onclick="removeCountryToRow(this)">حذف</button>
+                </div>
+                   
+                </div>
+                `);
+
+        }
+
         function removeCountryToRow(that) {
+            $(that).closest('.row').remove();
+        }
+
+        function removeJobsToRow(that) {
             $(that).closest('.row').remove();
         }
     </script>

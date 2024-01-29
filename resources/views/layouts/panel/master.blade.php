@@ -286,7 +286,7 @@
                         <div class="collapse" id="collapseForms" data-bs-parent="#accordionSidenav">
                             <nav class="snav-menu-nested nav accordion" id="accordionFormsPages">
                                 <a class="nav-link" href="shop-products.html">فرم تماس</a>
-                                <a class="nav-link" href="shop-addproduct.html">فرم ارزیابی</a>
+                                <a class="nav-link" href="{{ route('forms.assessment') }}">فرم ارزیابی</a>
                             </nav>
                         </div>
                         <!-- جدول -->
