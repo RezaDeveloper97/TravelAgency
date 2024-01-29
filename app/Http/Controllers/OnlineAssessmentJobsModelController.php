@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\onlineAssessmentModel;
-use App\Http\Requests\StoreonlineAssessmentModelRequest;
-use App\Http\Requests\UpdateonlineAssessmentModelRequest;
+use App\Models\onlineAssessmentJobsModel;
+use App\Http\Requests\StoreonlineAssessmentJobsModelRequest;
+use App\Http\Requests\UpdateonlineAssessmentJobsModelRequest;
 
-class OnlineAssessmentModelController extends Controller
+class OnlineAssessmentJobsModelController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,15 +27,15 @@ class OnlineAssessmentModelController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreonlineAssessmentModelRequest $request)
+    public function store(StoreonlineAssessmentJobsModelRequest $request)
     {
-        dd('ss');
+        //
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(onlineAssessmentModel $onlineAssessmentModel)
+    public function show(onlineAssessmentJobsModel $onlineAssessmentJobsModel)
     {
         //
     }
@@ -43,7 +43,7 @@ class OnlineAssessmentModelController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(onlineAssessmentModel $onlineAssessmentModel)
+    public function edit(onlineAssessmentJobsModel $onlineAssessmentJobsModel)
     {
         //
     }
@@ -51,7 +51,7 @@ class OnlineAssessmentModelController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateonlineAssessmentModelRequest $request, onlineAssessmentModel $onlineAssessmentModel)
+    public function update(UpdateonlineAssessmentJobsModelRequest $request, onlineAssessmentJobsModel $onlineAssessmentJobsModel)
     {
         //
     }
@@ -59,7 +59,7 @@ class OnlineAssessmentModelController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(onlineAssessmentModel $onlineAssessmentModel)
+    public function destroy(onlineAssessmentJobsModel $onlineAssessmentJobsModel)
     {
         //
     }
