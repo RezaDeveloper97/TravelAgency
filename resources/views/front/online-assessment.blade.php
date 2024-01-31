@@ -4,6 +4,8 @@
 
 {{-- head modules --}}
 @prepend('endOfhead')
+<link rel="stylesheet" href="{{ customAsset('front-assets/plugins/sweetalert2/sweetalert2.min.css') }}">
+    
 @endprepend
 
 @section('content')
@@ -261,7 +263,7 @@
                                 شما ارتباط شرکت را با شما آغاز کند .
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button type="submit" href="#" class="default-btn my-3">ثبت</button>
+                                <button type="submit" href="#" class="default-btn my-3 sweet-success">ثبت</button>
                             </div>
                         </div>
                     </div>
@@ -273,6 +275,7 @@
 
 {{-- body modules --}}
 @prepend('endOfbody')
+<script src="{{ customAsset('front-assets/plugins/sweetalert2/sweetalert2.all.min.js') }}"></script>
     <script>
         function addCountryToRow() {
             $('#rowCountries').append(`
@@ -351,5 +354,17 @@
         function removeJobsToRow(that) {
             $(that).closest('.row').remove();
         }
+
+        //
+// Center
+document.querySelector('.sweet-success').addEventListener('click', function() {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'اطلاعات شما با موفقیت ارسال شد',
+        showConfirmButton: false,
+        timer: 2500
+    })
+})
     </script>
 @endprepend
