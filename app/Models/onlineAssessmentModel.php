@@ -30,5 +30,5 @@ class onlineAssessmentModel extends Model
         'active-email',
         'description',
         'tip',
-    ];
+    ];  
 }

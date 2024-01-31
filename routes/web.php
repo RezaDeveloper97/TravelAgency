@@ -59,8 +59,11 @@ Route::get('/forms/assessment', function () {
     return view('panel.assessment');
 })->name('forms.assessment');
 
-Route::get('/forms/assessment-view', function () {
-    return view('panel.assessment-view');
+Route::get('/forms/assessment-view/{id}', function ($id) {
+    $onlineAssessmentModel = onlineAssessmentModel::findOrFail($id);
+    $onlineAssessmentJobsModel = onlineAssessmentJobsModel::where('online_assessment_id', $id)->get();
+    $onlineAssessmentVisasModel = onlineAssessmentVisasModel::where('online_assessment_id', $id)->get();
+    return view('panel.assessment-view', compact('onlineAssessmentModel', 'onlineAssessmentJobsModel', 'onlineAssessmentVisasModel'));
 })->name('forms.assessment-view');
 
 Route::get('/blank', function () {

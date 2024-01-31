@@ -60,7 +60,7 @@
                                 <td>{{ $row['active-email'] }}</td>
                                 <td>{{ $row->created_at }}</td>
                                 <td>
-                                    <button class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></button>
+                                    <a href="{{ route('forms.assessment-view', $row->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
                                     <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></button>
                                 </td>
                             </tr>
