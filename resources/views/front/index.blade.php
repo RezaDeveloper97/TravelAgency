@@ -35,7 +35,7 @@
 </div>
 <!-- Hero Warp End -->
 <!-- Immigration Warp Start -->
-<div class="immigration-warp pb-75">
+{{-- <div class="immigration-warp pb-75">
     <div class="container style1">
         <div class="section-title style1">
             <span class="title">گواهی آموزشی</span>
@@ -101,7 +101,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Immigration Warp End -->
 <!-- About Warp Start -->
 <div class="about-warp pb-100">
@@ -243,7 +243,7 @@
 </div>
 <!-- Services Warp End -->
 <!-- Feedback Warp Start -->
-<div class="feedback-warp pt-100 pb-75">
+{{-- <div class="feedback-warp pt-100 pb-75">
     <div class="container style1">
         <div class="section-title style1"> <span class="title">بازخورد مشتریان</span> <h2>آنها در مورد ما چه می گویند؟ با هم بودن</h2> </div>
         <div class="row justify-content-center">
@@ -316,7 +316,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Feedback Warp End -->
 <!-- Choose Warp Start  -->
 <div class="choose-warp">
@@ -374,7 +374,7 @@
 </div>
 <!-- Choose Warp End  -->
 <!-- Consultants Warp Start -->
-<div class="consultant-warp ptb-100">
+{{-- <div class="consultant-warp ptb-100">
     <div class="container style1">
         <div class="section-title style1">
             <span class="title">افراد حرفه ای</span>
@@ -778,7 +778,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Consultants Warp End -->
 <!-- Benefit Warp Start -->
 <div class="benefit-warp pb-100">
@@ -842,7 +842,7 @@
 </div>
 <!-- Benefit Warp End -->
 <!-- Blog Warp Start -->
-<div class="blog-warp pb-75">
+{{-- <div class="blog-warp pb-75">
     <div class="container style1">
         <div class="section-title">
             <span class="title">از وبلاگ ما</span>
@@ -942,7 +942,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Blog Warp End -->
 <!-- Partnership Warp Start -->
 <div class="partner-ship-warp">
