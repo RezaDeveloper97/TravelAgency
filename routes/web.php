@@ -18,42 +18,42 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::prefix('/admin')->group(function () {
+Route::prefix('/admin')
+    ->middleware('auth')
+    ->group(function () {
 
-    Route::get('/', function () {
-        return view('panel.index');
-    })->name('panelIndex');
+        Route::get('/', function () {
+            return view('panel.index');
+        })->name('panelIndex');
 
-    Route::get('/products', function () {
-        return view('panel.shop-products');
-    })->name('panel.products');
+        Route::get('/products', function () {
+            return view('panel.shop-products');
+        })->name('panel.products');
 
-    Route::get('/add-product', function () {
-        return view('panel.shop-addproduct');
-    })->name('panel.add-product');
+        Route::get('/add-product', function () {
+            return view('panel.shop-addproduct');
+        })->name('panel.add-product');
 
-    Route::get('/login', function () {
-        return view('panel.login');
-    })->name('panel.login');
+        Route::get('/forgetpwd', function () {
+            return view('panel.login');
+        })->name('panel.forgetpwd');
 
-    Route::get('/register', function () {
-        return view('panel.login');
-    })->name('panel.register');
+        Route::get('/auth-email', function () {
+            return view('panel.login');
+        })->name('panel.auth-email');
 
-    Route::get('/forgetpwd', function () {
-        return view('panel.login');
-    })->name('panel.forgetpwd');
+        Route::get('/posts/add', function () {
+            return view('panel.post-add');
+        })->name('panel.add');
+    });
 
-    Route::get('/auth-email', function () {
-        return view('panel.login');
-    })->name('panel.auth-email');
+Route::get('/admin/login', function () {
+    return view('panel.login');
+})->name('login');
 
-    Route::get('/posts/add', function () {
-        return view('panel.post-add');
-    })->name('panel.add');
-});
-
-
+// Route::get('/register', function () {
+//     return view('panel.login');
+// })->name('panel.register');
 
 Route::get('/forms/assessment', function () {
     return view('panel.assessment');
@@ -70,7 +70,7 @@ Route::get('/blank', function () {
     return view('front.blank');
 })->name('front.blank');
 
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('front.index');
 })->name('front.index');
 

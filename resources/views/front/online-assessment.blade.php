@@ -4,8 +4,7 @@
 
 {{-- head modules --}}
 @prepend('endOfhead')
-<link rel="stylesheet" href="{{ customAsset('front-assets/plugins/sweetalert2/sweetalert2.min.css') }}">
-    
+    <link rel="stylesheet" href="{{ customAsset('front-assets/plugins/sweetalert2/sweetalert2.min.css') }}">
 @endprepend
 
 @section('content')
@@ -23,7 +22,7 @@
     </div>
     <div class="contact-warp pt-5 pb-100">
         <div class="container">
-            <form action="{{ route('api.online.assessment') }}" method="POST">
+            <form action="{{ route('api.online.assessment') }}" method="POST" onsubmit="return onlineAssessmentSubmit()">
                 @csrf
                 <div class="row justify-content-center">
                     <div class="col-lg-12 shadow-sm" style="background: #F7F9FA;">
@@ -70,7 +69,7 @@
                             <div class="col-lg-3">
                                 <div class="mb-3">
                                     <label for="firstName" class="form-label"> نمره مدرک زبان انگلیسی </label>
-                                    <input name="en-score" type="text" class="form-control"  />
+                                    <input name="en-score" type="text" class="form-control" />
                                 </div>
                             </div>
                             <div class="col-lg-3">
@@ -87,7 +86,7 @@
                             <div class="col-lg-3">
                                 <div class="mb-3">
                                     <label for="firstName" class="form-label"> مدرک و نمره زبان فرانسه </label>
-                                    <input name="fr-score" type="text" class="form-control"  />
+                                    <input name="fr-score" type="text" class="form-control" />
                                 </div>
                             </div>
                             <div class="col-lg-4">
@@ -134,7 +133,8 @@
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="mb-3">
-                                            <label for="firstName" class="form-label" style="font-size:0.9rem"> سابقه مدیریت
+                                            <label for="firstName" class="form-label" style="font-size:0.9rem"> سابقه
+                                                مدیریت
                                                 یا بیزینس و اینکه چند درصد سهام به نام متقاضی است </label>
                                             <input name="management-experience[]" type="text" class="form-control" />
                                         </div>
@@ -144,7 +144,8 @@
                             <hr class="my-3">
                             <div class="col-lg-4">
                                 <div class="mb-3">
-                                    <label for="firstName" class="form-label"> سابقه مدیریت با پروانه مطب یا جواز کسب </label>
+                                    <label for="firstName" class="form-label"> سابقه مدیریت با پروانه مطب یا جواز کسب
+                                    </label>
                                     <select name="business-license" class="form-select" id="country" required>
                                         <option>انتخاب کنید...</option>
                                         <option>مدیر ارشد</option>
@@ -190,11 +191,12 @@
                                     </select>
                                 </div>
                             </div>
-    
+
                             <div class="col-lg-3">
                                 <div class="mb-3">
                                     <label for="firstName" class="form-label"> تلفن تماس ( واتس اپ )</label>
-                                    <input required name="whatsapp" type="text" class="form-control" dir="ltr" />
+                                    <input required name="whatsapp" type="text" class="form-control"
+                                        dir="ltr" />
                                 </div>
                             </div>
                             <div class="col-lg-3">
@@ -216,7 +218,8 @@
                                         <div class="row">
                                             <div class="col-lg-3">
                                                 <label for="visas" class="form-label">کشور</label>
-                                                <input name="visas[]" type="text" class="form-control" dir="ltr" />
+                                                <input name="visas[]" type="text" class="form-control"
+                                                    dir="ltr" />
                                             </div>
                                             <div class="col-lg-3">
                                                 <label for="type-visa" class="form-label"> نوع ویزا</label>
@@ -259,7 +262,8 @@
                                 </div>
                             </div>
                             <div class="fw-bold">
-                                بعد از تکمیل و اطمینان از صحت فرم‌ بالا ، دکمه ثبت را بزنید تا در ۴۸ ساعت آینده مشاور اختصاصی
+                                بعد از تکمیل و اطمینان از صحت فرم‌ بالا ، دکمه ثبت را بزنید تا در ۴۸ ساعت آینده مشاور
+                                اختصاصی
                                 شما ارتباط شرکت را با شما آغاز کند .
                             </div>
                             <div class="d-flex justify-content-center">
@@ -275,7 +279,7 @@
 
 {{-- body modules --}}
 @prepend('endOfbody')
-<script src="{{ customAsset('front-assets/plugins/sweetalert2/sweetalert2.all.min.js') }}"></script>
+    <script src="{{ customAsset('front-assets/plugins/sweetalert2/sweetalert2.all.min.js') }}"></script>
     <script>
         function addCountryToRow() {
             $('#rowCountries').append(`
@@ -355,16 +359,15 @@
             $(that).closest('.row').remove();
         }
 
-        //
-// Center
-document.querySelector('.sweet-success').addEventListener('click', function() {
-    Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'اطلاعات شما با موفقیت ارسال شد',
-        showConfirmButton: false,
-        timer: 2500
-    })
-})
+        function onlineAssessmentSubmit() {
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'اطلاعات شما با موفقیت ارسال شد',
+                showConfirmButton: false,
+                timer: 2500
+            })
+            return true;
+        }
     </script>
 @endprepend
