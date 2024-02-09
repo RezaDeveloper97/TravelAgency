@@ -23,20 +23,20 @@
                                 <div class="card-header justify-content-center"><h3 class="fw-light my-2">ورود به حساب کاربری</h3></div>
                                 <div class="card-body">
 
-                                    <form id="formAuthentication" action="basic.html" method="post">
+                                    <form id="formAuthentication" action="{{ route('api.login') }}" method="post">
 
                                         <!-- ایمیل -->
                                         <div class="mb-3">
-                                            <label class="small mb-1" for="inputEmailAddress">نام کاربری</label>
-                                            <input class="form-control" name="inputEmailAddress" dir="ltr" id="inputEmailAddress" type="text" placeholder="نام کاربری خود را وارد کنید">
+                                            <label class="small mb-1" for="email">نام کاربری</label>
+                                            <input class="form-control" name="email" dir="ltr" id="email" type="text" placeholder="نام کاربری خود را وارد کنید">
                                         </div>
 
                                         <!-- رمز عبور -->
                                         <div class="mb-3">
-                                            <label class="small mb-1" for="inputPassword">رمز عبور</label>
+                                            <label class="small mb-1" for="password">رمز عبور</label>
                                             <div class="input-group input-group-merge has-validation">
-                                                <input type="password" name="inputPassword" id="inputPassword" class="form-control text-end pe-2" dir="ltr" placeholder="رمز عبور خود را وارد کنید" aria-describedby="inputPassword">
-                                                <span class="input-group-text cursor-pointer"><i id="togglePassword" data-to="#inputPassword" class="bx bx-hide togglePasswordEye"></i></span>
+                                                <input type="password" name="password" id="password" class="form-control text-end pe-2" dir="ltr" placeholder="رمز عبور خود را وارد کنید" aria-describedby="password">
+                                                <span class="input-group-text cursor-pointer"><i id="togglePassword" data-to="#password" class="bx bx-hide togglePasswordEye"></i></span>
                                             </div>
                                         </div>
 
@@ -49,7 +49,7 @@
                                             <i class="bx bx-left-arrow-alt"></i>
                                         </a>
 
-                                        <a class="btn btn-primary btn-block w-100" href="index.html">ورود</a>
+                                        <button class="btn btn-primary btn-block w-100" type="submit">ورود</button>
                                     </form>
                                 </div>
                                 <div class="card-footer text-center">
