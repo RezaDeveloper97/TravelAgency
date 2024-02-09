@@ -107,7 +107,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link  with-image">
+                        <a href="{{ route('front.index') }}" class="nav-link  with-image">
                             صفحه اصلی
                             <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
@@ -173,7 +173,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link  with-image">
+                        <a href="{{ route('front.contact') }}" class="nav-link  with-image">
                             تماس با ما
                             <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
@@ -217,7 +217,7 @@
         <div class="offcanvas-body">
             <div class="accordion" id="navbarAccordion">
                 <div class="accordion-item">
-                    <a class="accordion-button without-icon" href="contact.html">
+                    <a class="accordion-button without-icon" href="{{ route('front.index') }}">
                         صفحه اصلی
                     </a>
                 </div>
@@ -295,7 +295,7 @@
                     </a>
                 </div>
                 <div class="accordion-item">
-                    <a class="accordion-button without-icon" href="contact.html">
+                    <a class="accordion-button without-icon" href="{{ route('front.contact') }}">
                    تماس با ما
                     </a>
                 </div>
@@ -360,7 +360,7 @@
                                         <a href="blog.html">از وبلاگ ما</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">تماس با ما</a>
+                                        <a href="{{ route('front.contact') }}">تماس با ما</a>
                                     </li>
                                     <li>
                                         <a href="visa.html">سود ما</a>
