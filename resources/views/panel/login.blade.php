@@ -30,7 +30,6 @@
                                             <label class="small mb-1" for="email">نام کاربری</label>
                                             <input class="form-control" name="email" dir="ltr" id="email" type="text" placeholder="نام کاربری خود را وارد کنید">
                                         </div>
-
                                         <!-- رمز عبور -->
                                         <div class="mb-3">
                                             <label class="small mb-1" for="password">رمز عبور</label>
