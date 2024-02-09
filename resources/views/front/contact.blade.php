@@ -91,8 +91,12 @@
                 <div class="contact-form">
                     <h4>ارسال یک پیام</h4>
                     <form>
-                        <input type="text" class="form-control" placeholder="نام کامل" /> <input type="text" class="form-control" placeholder="آدرس ایمیل" /> <input type="text" class="form-control" placeholder="تلفن" />
-                        <input type="text" class="form-control" placeholder="موضوع" /> <textarea type="text" class="form-control" placeholder="پیام"></textarea> <button class="default-btn" type="submit">ارسال پیام</button>
+                        <input type="text" class="form-control" name="contactName" placeholder="نام کامل" /> 
+                        <input type="text" class="form-control" name="contactEmail" placeholder="آدرس ایمیل" />
+                        <input type="text" class="form-control" name="contactTell" placeholder="تلفن" />
+                        <input type="text" class="form-control" name="contactSubject" placeholder="موضوع" /> 
+                        <textarea type="text" class="form-control" name="contactMsg" placeholder="پیام"></textarea>
+                        <button class="default-btn" type="submit">ارسال پیام</button>
                     </form>
                 </div>
             </div>
