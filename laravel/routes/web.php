@@ -19,7 +19,7 @@ use Illuminate\Http\Request;
 */
 
 Route::prefix('/admin')
-    ->middleware('auth')
+    ->middleware('auth:admin')
     ->group(function () {
 
         Route::get('/', function () {
@@ -113,3 +113,12 @@ Route::post('req/online/assessment', function (Request $request) {
 
     return redirect()->to(route('front.online-assessment'));
 })->name('api.online.assessment');
+
+
+Route::post('req/login', function (Request $request) {
+    if (\Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
+        return true;
+    }
+
+    return false;
+})->name('api.login');
