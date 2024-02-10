@@ -225,7 +225,7 @@
                                                 <label for="type-visa" class="form-label"> نوع ویزا</label>
                                                 <select name="type-visa[]" class="form-select" required>
                                                     <option>انتخاب کنید...</option>
-                                                    <option>توریستس </option>
+                                                    <option>توریستی</option>
                                                     <option>کاری</option>
                                                     <option>تجاری </option>
                                                     <option>تحصیلی </option>
