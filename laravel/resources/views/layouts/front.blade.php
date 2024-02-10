@@ -37,7 +37,7 @@
     </div>
     <!-- End preloader Area -->
     <!-- Top Header Warp Start -->
-    <div class="top-header-warp">
+    {{-- <div class="top-header-warp">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-xl-7 col-lg-8">
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Top Header Warp End -->
     <!-- Start Navbar Area -->
     <nav class="navbar navbar-expand-lg" id="navbar">
