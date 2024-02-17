@@ -119,22 +119,17 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link"> ویزای تحصیلی کانادا</a>
+                                <a href="{{ route('front.study-visa')}}" class="nav-link">ویزای تحصیلی</a>
                             </li>
-
-                        </ul>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="javascript:void(0)" class="dropdown-toggle nav-link with-image">
-                            ویزای توریستی
-                            <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
-                        </a>
-                        <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a href="visa.html" class="nav-link">ویزای توریستی کانادا</a>
+                                <a href="{{ route('front.work-visa')}}" class="nav-link">ویزای کاری</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('front.tourist-visa')}}" class="nav-link">ویزای توریستی</a>
                             </li>
                         </ul>
                     </li>
+                    
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link with-image">
                             وقت سفارت
@@ -142,31 +137,25 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a href="coaching.html" class="nav-link"> وقت سفارت کانادا</a>
+                                <a href="coaching.html" class="nav-link">وقت سفارت کانادا</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="javascript:void(0)" class="dropdown-toggle nav-link with-image">
-                            پیکاپ
+                        <a href="{{ route('front.pickup-passport') }}" class="dropdown-toggle nav-link with-image">
+                            پیکاپ پاسپورت 
                             <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
-                        <ul class="dropdown-menu">
-                            <li class="nav-item">
-                                <a href="country.html" class="nav-link">پیکاپ پاسپورت کانادا</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="blog.html" class="nav-link  with-image">
+                        <a href="{{ route('front.blog') }}" class="nav-link  with-image">
                             وبلاگ
                             <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                     </li>
 
-
                     <li class="nav-item">
-                        <a href="coaching.html" class="nav-link  with-image">
+                        <a href="{{ route('front.coaching') }}" class="nav-link  with-image">
                             رضایت مشتری ها
                             <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
@@ -197,7 +186,7 @@
                         </ul>
                     </div>
                     <div class="option-item style2">
-                        <a href="{{ route('front.online-assessment') }}" class="default-btn"><span>فرم ارزیابی</span> </a>
+                        <a href="{{ route('front.online-assessment')}}" class="default-btn"><span>فرم ارزیابی</span> </a>
                     </div>
                 </div>
             </div>
@@ -207,7 +196,7 @@
     <!-- Start Mobile Device Navbar Area -->
     <div class="responsive-navbar offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
         <div class="offcanvas-header">
-            <a href="index.html" class="logo d-inline-block">
+            <a href="{{ route('front.index')}}" class="logo d-inline-block">
                 <img src="front-assets/images/logo.png" alt="logo">
             </a>
             <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -217,81 +206,45 @@
         <div class="offcanvas-body">
             <div class="accordion" id="navbarAccordion">
                 <div class="accordion-item">
-                    <a class="accordion-button without-icon" href="{{ route('front.index') }}">
+                    <a class="accordion-button without-icon" href="{{ route('front.index')}}">
                         صفحه اصلی
                     </a>
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        ویزای تحصیلی
+                        ویزاها 
                     </button>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
                         <div class="accordion-body">
                             <div class="accordion" id="navbarAccordion2">
                                 <div class="accordion-item">
-                                    <a href="about.html" class="accordion-link">ویزای تحصیلی کانادا </a>
+                                    <a href="{{ route('front.study-visa') }}" class="accordion-link">ویزای تحصیلی</a>
+                                    <a href="{{ route('front.work-visa') }}" class="accordion-link">ویزای کاری</a>
+                                    <a href="{{ route('front.tourist-visa') }}" class="accordion-link">ویزای توریستی</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        ویزای توریستی
-                    </button>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
-                        <div class="accordion-body">
-                            <div class="accordion" id="navbarAccordion2">
-                                <div class="accordion-item">
-                                    <a href="visa.html" class="accordion-link">
-                                        ویزای توریستی کانادا
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <a class="accordion-button without-icon" href="{{ route('front.pickup-passport') }}">
+                        پیکاپ پاسپورت
+                    </a>
                 </div>
                 <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo33" aria-expanded="false" aria-controls="collapseTwo33">
-                        وقت سفارت
-                    </button>
-                    <div id="collapseTwo33" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
-                        <div class="accordion-body">
-                            <div class="accordion" id="navbarAccordion2">
-                                <div class="accordion-item">
-                                    <a href="coaching.html" class="accordion-link">
-                                        وقت سفارت کانادا
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo333" aria-expanded="false" aria-controls="collapseTwo333">
-                        پیکاپ
-                    </button>
-                    <div id="collapseTwo333" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion23">
-                        <div class="accordion-body">
-                            <div class="accordion" id="navbarAccordion23">
-                                <div class="accordion-item">
-                                    <a href="country.html" class="accordion-link">
-                                        پیکاپ پاسپورت کانادا
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <a class="accordion-button without-icon" href="contact.html">
+                    <a class="accordion-button without-icon" href="{{ route('front.blog') }}">
                         وبلاگ
                     </a>
                 </div>
 
                 <div class="accordion-item">
-                    <a class="accordion-button without-icon" href="coaching.html">
+                    <a class="accordion-button without-icon" href="{{ route('front.coaching') }}">
                         رضایت مشتری ها
+                    </a>
+                </div>
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="{{ route('front.about') }}">
+                   درباره تدورا
                     </a>
                 </div>
                 <div class="accordion-item">
@@ -310,14 +263,14 @@
                         </li>
                         <li>
                             <div class="content">
-                                <span>تماس در ها زمان</span>
-                                <a href="tel:99654892986">+ 99 (65489) 2986</a>
+                                <a href="https://www.instagram.com/theodoraworld.official/" target="_blank" dir="ltr">@@theodoraworld.official</a>
+                                <a href="mailto:info@theodoraworld.com">info@theodoraworld.com</a>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="option-item">
-                    <a href="{{ route('front.online-assessment') }}" class="default-btn">فرم ارزیابی</a>
+                    <a href="{{ route('front.online-assessment')}}" class="default-btn">فرم ارزیابی</a>
                 </div>
             </div>
         </div>
@@ -334,101 +287,8 @@
     <div class="footer-warp pt-100 pb-75">
         <div class="container style1">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="footer-widget">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="front-assets/images/white-logo.png" alt="image">
-                            </a>
-                        </div>
-                        <p class="first-tag">لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است.لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد.</p>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-widget">
-                                <h3>مرور</h3>
-                                <ul class="explore-link">
-                                    <li>
-                                        <a href="about.html">درباره شرکت</a>
-                                    </li>
-                                    <li>
-                                        <a href="team.html">ملاقات با تیم</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">از وبلاگ ما</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('front.contact') }}">تماس با ما</a>
-                                    </li>
-                                    <li>
-                                        <a href="visa.html">سود ما</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="footer-widget">
-                                <h3>ویزای ما</h3>
-                                <ul class="explore-link">
-                                    <li>
-                                        <a href="visa.html">ویزای دانشجویی</a>
-                                    </li>
-                                    <li>
-                                        <a href="visa.html">ویزای خانوادگی</a>
-                                    </li>
-                                    <li>
-                                        <a href="visa.html">ویزای تجاری</a>
-                                    </li>
-                                    <li>
-                                        <a href="visa.html">ویزای توریستی</a>
-                                    </li>
-                                    <li>
-                                        <a href="visa.html">ویزای پزشکی</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="footer-widget">
-                                <h3>تماس با ما</h3>
-                                <ul class="footer-contact">
-                                    <li>
-                                        <i class="ri-mail-line"></i>
-                                        <a href="/cdn-cgi/l/email-protection#5038353c3c3f10353b35297e333f3d"><span class="__cf_email__" data-cfemail="b5ddd0d9d9daf5d0ded0cc9bd6dad8">[email&#160;protected]</span></a>
-                                    </li>
-                                    <li>
-                                        <i class="ri-map-pin-line"></i>
-                                        <p>ایران ، استان تهران ، میدان آزادی</p>
-                                    </li>
-                                    <li>
-                                        <i class="ri-time-line"></i>
-                                        <p>Mon - Sat: 9.00 AM to 10.00 PM</p>
-                                    </li>
-                                    <li>
-                                        <img src="front-assets/images/svgs/phone2.svg" alt="">
-                                        <a href="tel:99654892986" dir="ltr">+ 99 (65489) 2986</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-widget">
-                                <h3>مشترک شدن خبرنامه</h3>
-                                <p class="last-tag">برای دریافت به‌روزرسانی‌ها، پیشنهادات و تحصیل در خارج از کشور، آدرس ایمیل خود را وارد کنید.</p>
-                                <div class="input-box">
-                                    <form>
-                                        <input type="text" class="form-control" placeholder="ایمیل شما">
-                                        <button class="default-btn" type="submit">
-                                            <img src="front-assets/images/svgs/paper-plane1.svg" alt="">
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+                
             </div>
         </div>
     </div>

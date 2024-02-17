@@ -13,7 +13,7 @@
         <div class="inner-hero-content">
             <h2>تماس با ما</h2>
             <ul>
-                <li><a href="index.html">خانه</a></li>
+                <li><a href="{{ route('front.index') }}">تدورا</a></li>
                 <li>تماس با ما</li>
             </ul>
         </div>

@@ -82,6 +82,38 @@ Route::get('/contact', function () {
     return view('front.contact');
 })->name('front.contact');
 
+Route::get('/work-visa', function () {
+    return view('front.work-visa');
+})->name('front.work-visa');
+
+Route::get('/coaching', function () {
+    return view('front.coaching');
+})->name('front.coaching');
+
+Route::get('/tourist-visa', function () {
+    return view('front.tourist-visa');
+})->name('front.tourist-visa');
+
+Route::get('/study-visa', function () {
+    return view('front.study-visa');
+})->name('front.study-visa');
+
+Route::get('/blog', function () {
+    return view('front.blog');
+})->name('front.blog');
+
+Route::get('/blog-details', function () {
+    return view('front.blog-details');
+})->name('front.blog-details');
+
+Route::get('/about', function () {
+    return view('front.about');
+})->name('front.about');
+
+Route::get('/pickup-passport', function () {
+    return view('front.pickup-passport');
+})->name('front.pickup-passport');
+
 Route::post('req/online/assessment', function (Request $request) {
     $allReq = $request->all();
     $onlineAssessmentModel = onlineAssessmentModel::create($request->all());

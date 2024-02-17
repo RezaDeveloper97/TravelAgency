@@ -13,7 +13,7 @@
             <div class="inner-hero-content">
                 <h2>فرم ارزیابی برای شما</h2>
                 <ul>
-                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="{{ route('front.index') }}">تدورا</a></li>
                     <li>فرم ارزیابی</li>
                 </ul>
             </div>
