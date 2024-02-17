@@ -94,7 +94,7 @@
     <!-- Start Navbar Area -->
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('front.index') }}">
+            <a class="navbar-brand" href="{{ route('front.index')}}">
                 <img src="front-assets/images/logo.png" width="80" alt="logo">
             </a>
             <button class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button" aria-controls="navbarOffcanvas">
@@ -107,7 +107,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a href="{{ route('front.index') }}" class="nav-link  with-image">
+                        <a href="{{ route('front.index')}}" class="nav-link  with-image">
                             صفحه اصلی
                             <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
