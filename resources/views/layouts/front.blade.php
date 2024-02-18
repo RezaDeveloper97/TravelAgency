@@ -114,7 +114,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link with-image">
-                            ویزای تحصیلی
+                            ویزا
                             <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                         <ul class="dropdown-menu">
@@ -160,7 +160,12 @@
                             <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
                     </li>
-
+                    <li class="nav-item">
+                        <a href="{{ route('front.about') }}" class="nav-link  with-image">
+                            درباره تدورا
+                            <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a href="{{ route('front.contact') }}" class="nav-link  with-image">
                             تماس با ما
@@ -180,7 +185,7 @@
                             <li>
                                 <div class="content">
                                     <span>تماس در هر زمان</span>
-                                    <a href="tel:99654892986" dir="ltr">+ 99 (65489) 2986</a>
+                                    <a href="tel:99654892986" dir="ltr">+98123456789</a>
                                 </div>
                             </li>
                         </ul>
@@ -212,7 +217,7 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        ویزاها 
+                        ویزا 
                     </button>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
                         <div class="accordion-body">

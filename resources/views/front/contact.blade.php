@@ -18,7 +18,7 @@
             </ul>
         </div>
     </div>
-    <img src="assets/images/shapes/inner-hero-shape1.png" class="inner-hero-shape1" alt="image" />
+    <img src="front-assets/images/shapes/inner-hero-shape1.png" class="inner-hero-shape1" alt="image" />
 </div>
 
 <div class="contact-warp pt-100">
@@ -26,28 +26,21 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="contact-content">
-                    <h4>عشق به گوش دادن از شما. در تماس باشید</h4>
                     <p>ما می دانیم که هیچ دو کسب و کار مشابه نیستند، و به همین دلیل است که ما راه حل های نرم افزاری سفارشی را برای رفع نیازهای خاص شما ارائه می دهیم.</p>
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="contact-list">
-                                <ul>
-                                    <li>ساعت های کاری ما</li>
-                                    <li>دوشنبه - جمعه</li>
-                                    <li>8:00 صبح تا 5:00 عصر</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="contact-list">
-                                <ul>
-                                    <li>ساعت های کاری ما</li>
-                                    <li>دوشنبه - جمعه</li>
-                                    <li>8:00 صبح تا 5:00 عصر</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+               <p>شماره‌ی واتس آپ برات میزارم ولی حتما قبل از زنگ زدن ، فرم‌ارزیابی رو‌ پر کن تا اطلاعات روی سیستم‌ باشه تا راحت تر و کامل‌ تر بهت روش مهاجرتی معرفی کنم تا سه سوت برسی به مقصد 
+            </p>
+            <p>راستی یه ایمیل هم برات میزارم که فکر نکنم‌ بهش نیاز داشته باشی ولی ضرر نداره 
+                تدورا برای ارسال فایل قراردادش از این ایمیل استفاده میکنه. </p>
+                <p>info@theodoraworld.com</p>
+                <p>
+                    اوه اوه داشت یادم ‌میرفت ، اینستاگرام تدورا رو‌ از دست بدی از کلی ویدوهای ‌ آموزشی و‌ باحال جا میمونی 
+قسمت هایلایت‌ها رو‌ حتما چک‌ کن و مسافرای قبلیمون رو‌ ببین و‌ خودت رو‌ جای اونا تصور کن ، چون قراره تو هم کم کم چمدون رو‌ جمع کنی و‌ راهی بشی .
+                </p>
+                <p><a href="https://www.instagram.com/theodoraworld.official/" target="_blank"></a></p>
+                <p>
+                    منتظرت میمونم تا فرم رو‌ پر کنی عزیزم
+                </p>
+
                     <div class="row">
                         <div class="col-lg-6 col-sm-6">
                             <div class="contact-list">
