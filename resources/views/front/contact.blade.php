@@ -31,53 +31,33 @@
             </p>
             <p>راستی یه ایمیل هم برات میزارم که فکر نکنم‌ بهش نیاز داشته باشی ولی ضرر نداره 
                 تدورا برای ارسال فایل قراردادش از این ایمیل استفاده میکنه. </p>
-                <p>info@theodoraworld.com</p>
+                <p><a href="mailto:info@theodoraworld.com" href="_blank">info@theodoraworld.com</a></p>
                 <p>
                     اوه اوه داشت یادم ‌میرفت ، اینستاگرام تدورا رو‌ از دست بدی از کلی ویدوهای ‌ آموزشی و‌ باحال جا میمونی 
 قسمت هایلایت‌ها رو‌ حتما چک‌ کن و مسافرای قبلیمون رو‌ ببین و‌ خودت رو‌ جای اونا تصور کن ، چون قراره تو هم کم کم چمدون رو‌ جمع کنی و‌ راهی بشی .
                 </p>
-                <p><a href="https://www.instagram.com/theodoraworld.official/" target="_blank"></a></p>
+                <p>
+                    <div class="contact-share">
+                        <ul class="social">
+                            <li><h3>اینستاگرام تدورا:</h3></li>
+                            {{-- <li>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-line"></i></a>
+                            </li> --}}
+                            {{-- <li>
+                                <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-line"></i></a>
+                            </li> --}}
+                            <li>
+                                <a href="https://www.instagram.com/theodoraworld.official/" target="_blank"><i class="ri-instagram-line"></i></a>
+                            </li>
+                            {{-- <li>
+                                <a href="https://pinterest.com/" target="_blank"><i class="ri-pinterest-line"></i></a>
+                            </li> --}}
+                        </ul>
+                    </div>
+                </p>
                 <p>
                     منتظرت میمونم تا فرم رو‌ پر کنی عزیزم
                 </p>
-
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="contact-list">
-                                <ul>
-                                    <li>ایمل به ما</li>
-                                    <li><a href="mailto: hello@ekey.com"> hello@ekey.com</a></li>
-                                    <li><a href="mailto: hello@ekey.com"> hello@ekey.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="contact-list">
-                                <ul>
-                                    <li>در تماس باشید</li>
-                                    <li><a href="tel:99654892986">+ 99 (65489) 2986</a></li>
-                                    <li><a href="tel:12468880653">+1-246-888-0653</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-share">
-                        <ul class="social">
-                            <li><h3>اشتراک گذاری:</h3></li>
-                            <li>
-                                <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-line"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/" target="_blank"><i class="ri-twitter-line"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://pinterest.com/" target="_blank"><i class="ri-pinterest-line"></i></a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-6">

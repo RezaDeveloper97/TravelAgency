@@ -95,7 +95,7 @@
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('front.index')}}">
-                <img src="front-assets/images/logo.png" width="80" alt="logo">
+                <img src="front-assets/images/logo.png" class="logo-mobile" alt="logo">
             </a>
             <button class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button" aria-controls="navbarOffcanvas">
                 <span class="burger-menu">
@@ -130,7 +130,7 @@
                         </ul>
                     </li>
                     
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link with-image">
                             وقت سفارت
                             <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
@@ -140,9 +140,9 @@
                                 <a href="coaching.html" class="nav-link">وقت سفارت کانادا</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
-                        <a href="{{ route('front.pickup-passport') }}" class="dropdown-toggle nav-link with-image">
+                        <a href="{{ route('front.pickup-passport') }}" class="nav-link  with-image">
                             پیکاپ پاسپورت 
                             <img src="front-assets/images/svgs/navbar1.svg" class="navbar-image" alt="image">
                         </a>
@@ -202,7 +202,7 @@
     <div class="responsive-navbar offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
         <div class="offcanvas-header">
             <a href="{{ route('front.index')}}" class="logo d-inline-block">
-                <img src="front-assets/images/logo.png" alt="logo">
+                <img src="front-assets/images/logo.png" width="150" alt="logo">
             </a>
             <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
                 <i class="ri-close-line"></i>
@@ -259,21 +259,8 @@
                 </div>
             </div>
             <div class="others-option d-flex align-items-center">
-                <div class="option-item">
-                    <ul>
-                        <li>
-                            <div class="icon">
-                                <img src="front-assets/images/svgs/phone1.svg" alt="image">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <a href="https://www.instagram.com/theodoraworld.official/" target="_blank" dir="ltr">@@theodoraworld.official</a>
-                                <a href="mailto:info@theodoraworld.com">info@theodoraworld.com</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+              
+                
                 <div class="option-item">
                     <a href="{{ route('front.online-assessment')}}" class="default-btn">فرم ارزیابی</a>
                 </div>
