@@ -14,7 +14,7 @@
                     <div class="text-center">
                         <h1 class="text-white">به داشبورد مدیریتی خوش آمدید</h1>
                         <p class="lead mb-0 text-white-50">یک قالب حرفه ای بر پایه بوت استرپ5 با ظاهری بسیار دلنشین و جذاب</p>
-                        <a href="{{ route('panel.login') }}">login</a>
+                        <a href="{{ route('login') }}">login</a>
                     </div>
                 </div>
             </header>
