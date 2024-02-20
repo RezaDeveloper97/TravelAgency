@@ -13,7 +13,7 @@
             <div class="inner-hero-content">
                 <h2>فرم ارزیابی برای شما</h2>
                 <ul>
-                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="{{ route('front.index') }}">تدورا</a></li>
                     <li>فرم ارزیابی</li>
                 </ul>
             </div>
@@ -225,7 +225,7 @@
                                                 <label for="type-visa" class="form-label"> نوع ویزا</label>
                                                 <select name="type-visa[]" class="form-select" required>
                                                     <option>انتخاب کنید...</option>
-                                                    <option>توریستس </option>
+                                                    <option>توریستی</option>
                                                     <option>کاری</option>
                                                     <option>تجاری </option>
                                                     <option>تحصیلی </option>
