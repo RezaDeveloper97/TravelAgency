@@ -48,7 +48,7 @@
                                         <textarea type="text" class="form-control" name="contactMsg" readonly rows="10" placeholder="پیام"></textarea>
                                     </div>
                                     <div class="col-lg-4 mb-3">
-                                        <a href="{{ route('forms.contact') }}">بازگشت به لیست</a>
+                                        <a href="{{ route('panel.videos') }}">بازگشت به لیست</a>
                                     </div>
                                 </form>
                             </div>

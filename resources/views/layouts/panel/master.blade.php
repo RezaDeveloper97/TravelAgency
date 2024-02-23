@@ -22,7 +22,7 @@
         <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle">
             <i class="bx bx-menu bx-sm"></i>
         </button>
-        <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="index.html">داشبورد مدیریتی</a>
+        <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="{{ route('panel.index') }}">داشبورد مدیریتی</a>
         <form class="form-inline me-auto d-none d-lg-block me-3">
             <div class="input-group input-group-joined input-group-solid">
                 <input class="form-control pe-0" type="search" placeholder="جستجو ..." aria-label="جستجو">
@@ -224,10 +224,6 @@
                         تغییر کلمه عبور
                     </a>
                     <a class="dropdown-item" href="#">
-                        <div class="dropdown-item-icon"><i class="bx bxs-file-txt"></i></div>
-                        مشاهده لاگ سیستم
-                    </a>
-                    <a class="dropdown-item" href="#">
                         <div class="dropdown-item-icon"><i class="bx bx-log-out"></i></div>
                         خروج
                     </a>
@@ -255,27 +251,11 @@
                             <span class="badge bg-success-soft text-success ms-auto">2 جدید!</span>
                         </a>
                         <!-- داشبورد -->
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="{{ route('panel.index') }}">
                             <div class="nav-link-icon"><i class="bx bxs-dashboard"></i></div>
                             داشبورد
                         </a>
-                        <!-- فروشگاه -->
-                        <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse"
-                            data-bs-target="#collapseShop" aria-expanded="false" aria-controls="collapseShop">
-                            <div class="nav-link-icon"><i class="bx bx-shopping-bag"></i></div>
-                            فروشگاه
-                            <div class="snav-collapse-arrow"><i class="bx bx-chevron-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapseShop" data-bs-parent="#accordionSidenav">
-                            <nav class="snav-menu-nested nav accordion" id="collapseShopPages">
-                                <a class="nav-link" href="shop-products.html">لیست محصولات</a>
-                                <a class="nav-link" href="shop-addproduct.html">افزودن جدید</a>
-                                <a class="nav-link" href="shop-category.html">دسته بندی ها</a>
-                                <a class="nav-link" href="shop-tags.html">برچسنب ها</a>
-                                <a class="nav-link" href="shop-properties.html">ویژگی ‌ها</a>
-                                <a class="nav-link" href="shop-comments.html">نقد و برسی ها</a>
-                            </nav>
-                        </div>
+                       
                         <!-- نمودارها -->
                         <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse"
                             data-bs-target="#collapseForms" aria-expanded="false" aria-controls="collapseForms">
@@ -285,15 +265,17 @@
                         </a>
                         <div class="collapse" id="collapseForms" data-bs-parent="#accordionSidenav">
                             <nav class="snav-menu-nested nav accordion" id="accordionFormsPages">
-                                <a class="nav-link" href="shop-products.html">فرم تماس</a>
+                                <a class="nav-link" href="{{ route('forms.contact') }}">فرم تماس</a>
                                 <a class="nav-link" href="{{ route('forms.assessment') }}">فرم ارزیابی</a>
                             </nav>
                         </div>
-                        <!-- جدول -->
-                        <a class="nav-link pt-0" href="pages/tables.html">
-                            <div class="nav-link-icon"><i class="bx bx-table"></i></div>
-                            جدول
+
+                        <a class="nav-link" href="{{ route('panel.videos') }}">
+                            <div class="nav-link-icon"><i class="bx bxs-video"></i></div>
+                          ویدئو ها
                         </a>
+                       
+                        
                     </div>
                 </div>
             </nav>

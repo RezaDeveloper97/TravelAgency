@@ -23,7 +23,7 @@ Route::prefix('/admin')
 
         Route::get('/', function () {
             return view('panel.index');
-        })->name('panelIndex');
+        })->name('panel.index');
 
         Route::get('/products', function () {
             return view('panel.shop-products');
@@ -44,6 +44,14 @@ Route::prefix('/admin')
         Route::get('/posts/add', function () {
             return view('panel.post-add');
         })->name('panel.add');
+
+        Route::get('/videos', function () {
+            return view('panel.videos');
+        })->name('panel.videos');
+        
+        Route::get('panel.videos-view', function () {
+            return view('panel.videos-view');
+        })->name('panel.videos-view');
     });
 
 Route::get('/admin/login', function () {
@@ -57,6 +65,8 @@ Route::get('/admin/login', function () {
 Route::get('/forms/assessment', function () {
     return view('panel.assessment');
 })->name('forms.assessment');
+
+
 
 Route::get('/forms/assessment-view/{id}', function ($id) {
     $onlineAssessmentModel = onlineAssessmentModel::findOrFail($id);
@@ -80,6 +90,14 @@ Route::get('/online-assessment', function () {
 Route::get('/contact', function () {
     return view('front.contact');
 })->name('front.contact');
+
+Route::get('/forms/contact-view', function () {
+    return view('panel.contact-view');
+})->name('forms.contact-view');
+
+Route::get('/forms/contact', function () {
+    return view('panel.contact');
+})->name('forms.contact');
 
 Route::get('/work-visa', function () {
     return view('front.work-visa');

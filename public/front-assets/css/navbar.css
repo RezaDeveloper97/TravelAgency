@@ -543,10 +543,11 @@ Navbar Area CSS
     border: 0;
     padding: 0;
     border-radius: 0;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     color: #000000;
     background-color: transparent;
     border-bottom: 1px solid #ddd;
+    padding: 10px 0;
 }
 .responsive-navbar
     .offcanvas-body
@@ -611,9 +612,9 @@ Navbar Area CSS
     .accordion-item
     .accordion-collapse
     .accordion-body {
-    padding: 20px;
     margin-top: 12px;
     background-color: #f8f8f8;
+    padding: 5px 10px;
 }
 .responsive-navbar
     .offcanvas-body
@@ -641,6 +642,7 @@ Navbar Area CSS
     background-color: transparent;
     font-size: 15px;
     font-weight: 500;
+    padding: 5px 0;
 }
 .responsive-navbar
     .offcanvas-body

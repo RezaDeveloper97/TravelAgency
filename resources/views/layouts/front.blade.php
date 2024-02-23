@@ -265,6 +265,13 @@
                     <a href="{{ route('front.online-assessment')}}" class="default-btn">فرم ارزیابی</a>
                 </div>
             </div>
+
+            <div class="others-option d-flex align-items-center">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="جستجو" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">جستجو</button>
+              </form>
+            </div>
         </div>
     </div>
     <!-- End Mobile Device Navbar Area -->

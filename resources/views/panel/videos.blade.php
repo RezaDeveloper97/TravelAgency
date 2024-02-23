@@ -33,44 +33,33 @@
                 <table id="datatablesSimple">
                     <thead>
                         <tr>
-                            <th>نام</th>
-                            <th>آدرس ايميل</th>
-                            <th>تلفن</th>
-                            <th>موضوع</th>
-                            <th>پیام</th>
+                            <th>نام ویدئو</th>
                             <th>تاریخ ارسال</th>
                             <th>عملیات</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
-                            <th>نام</th>
-                            <th>آدرس ايميل</th>
-                            <th>تلفن</th>
-                            <th>موضوع</th>
-                            <th>پیام</th>
+                            <th>نام ویدئو</th>
                             <th>تاریخ ارسال</th>
                             <th>عملیات</th>
                         </tr>
                     </tfoot>
                     <tbody>
-                        @php
-                            $onlineAssessmentModel = \App\Models\onlineAssessmentModel::all();
-                        @endphp
-                        @foreach($onlineAssessmentModel as $row)
+                      
+                      
                             <tr>
-                                <td>{{ $row->fnamelname }}</td>
-                                <td>{{ $row->whatsapp }}</td>
-                                <td>{{ $row['active-email'] }}</td>
-                                <td>{{ $row->created_at }}</td>
+                         
+                                
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <a href="{{ route('forms.contact-view', $row->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
+                                    <a href="{{ route('panel.videos-view', $row->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
                                     <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></button>
                                 </td>
                             </tr>
-                        @endforeach 
+                       
+                            
                     </tbody>
                 </table>
             </div>

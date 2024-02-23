@@ -12,13 +12,11 @@
 <!-- Hero Warp Start -->
 <div class="hero-warp">
     <div class="container-fluid">
-        <div class="inner-hero-warp">
+    
             <div class="row align-items-end">
                 <div class="col-lg-6">
                     <div class="hero-content">
-                        <h2>باز هم‌ سلام اینجا خونه‌ی تدورا هست و‌ من هم‌ تدورا هستم</h1>
-                        <p>از اولین باری که وارد خانه‌ی من میشی، تو‌ مهمان همیشگی این خونه میشی و‌ قرار داستان مهاجرت خودت رو چند سال بعد برای بچه هات تعریف کنی اینجا خبری از چهارچوب های خشک مهاجرتی نیست، پس هر وقت خواستی میتونی سوال بپرسی و من تا وقتی که ببینم‌ تو‌ به‌ مقصد رسیدی پیشتم‌‌.</p>
-                        <p>ببین خجالت نکشیا، ‌هروقت خواستی سوالاتو‌ بپرس</p>
+                    
                         {{-- <div class="hero-btn">
                             <a href="contact.html" class="default-btn">تماس با ما</a>
                             <a href="apply.html" class="default-btn style2">مرور کن</a>
@@ -31,9 +29,23 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
     </div>
 </div>
+
+<div class="container">
+   
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="py-5">
+                <h2>باز هم‌ سلام اینجا خونه‌ی تدورا هست و‌ من هم‌ تدورا هستم</h1>
+                    <p>از اولین باری که وارد خانه‌ی من میشی، تو‌ مهمان همیشگی این خونه میشی و‌ قرار داستان مهاجرت خودت رو چند سال بعد برای بچه هات تعریف کنی اینجا خبری از چهارچوب های خشک مهاجرتی نیست، پس هر وقت خواستی میتونی سوال بپرسی و من تا وقتی که ببینم‌ تو‌ به‌ مقصد رسیدی پیشتم‌‌.</p>
+                    <p>ببین خجالت نکشیا، ‌هروقت خواستی سوالاتو‌ بپرس</p>
+                </div>
+                </div>
+            </div>
+          
+        </div>
 <!-- Hero Warp End -->
 <!-- Immigration Warp Start -->
 {{-- <div class="immigration-warp pb-75">
