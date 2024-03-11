@@ -19,6 +19,7 @@ use Illuminate\Http\Request;
 */
 
 Route::prefix('/admin')
+    ->middleware('auth')
     ->group(function () {
 
         Route::get('/', function () {
@@ -48,32 +49,59 @@ Route::prefix('/admin')
         Route::get('/videos', function () {
             return view('panel.videos');
         })->name('panel.videos');
-        
+
         Route::get('panel.videos-view', function () {
             return view('panel.videos-view');
         })->name('panel.videos-view');
+
+        Route::get('forms/assessment', function () {
+            return view('panel.assessment');
+        })->name('forms.assessment');
+
+        Route::get('forms/assessment-view/{id}', function ($id) {
+            $onlineAssessmentModel = onlineAssessmentModel::findOrFail($id);
+            $onlineAssessmentJobsModel = onlineAssessmentJobsModel::where('online_assessment_id', $id)->get();
+            $onlineAssessmentVisasModel = onlineAssessmentVisasModel::where('online_assessment_id', $id)->get();
+            return view('panel.assessment-view', compact('onlineAssessmentModel', 'onlineAssessmentJobsModel', 'onlineAssessmentVisasModel'));
+        })->name('forms.assessment-view');
+
+        Route::get('forms/assessment-view/delete/{id}', function ($id) {
+            $onlineAssessmentModel = onlineAssessmentModel::findOrFail($id);
+            $onlineAssessmentModel->delete();
+            $onlineAssessmentJobsModel = onlineAssessmentJobsModel::where('online_assessment_id', $id)->delete();
+            $onlineAssessmentVisasModel = onlineAssessmentVisasModel::where('online_assessment_id', $id)->delete();
+            return redirect()->to(route('forms.assessment'));
+        })->name('forms.assessment-delete');
     });
 
 Route::get('/admin/login', function () {
     return view('panel.login');
 })->name('login');
 
+Route::get('/admin/logout', function () {
+    \Auth::logout();
+ 
+    return redirect()->to(route('login'));
+})->name('logout');
+
+
+Route::post('req/login', function (Request $request) {
+    $request->validate([
+        'email' => 'required|email',
+        'password' => 'required|string',
+    ]);
+
+    if (\Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+        return redirect()->to(route('panel.index'));
+    }
+
+    return redirect()->to(route('login'));
+})->name('api.login');
+
 // Route::get('/register', function () {
 //     return view('panel.login');
 // })->name('panel.register');
 
-Route::get('/forms/assessment', function () {
-    return view('panel.assessment');
-})->name('forms.assessment');
-
-
-
-Route::get('/forms/assessment-view/{id}', function ($id) {
-    $onlineAssessmentModel = onlineAssessmentModel::findOrFail($id);
-    $onlineAssessmentJobsModel = onlineAssessmentJobsModel::where('online_assessment_id', $id)->get();
-    $onlineAssessmentVisasModel = onlineAssessmentVisasModel::where('online_assessment_id', $id)->get();
-    return view('panel.assessment-view', compact('onlineAssessmentModel', 'onlineAssessmentJobsModel', 'onlineAssessmentVisasModel'));
-})->name('forms.assessment-view');
 
 Route::get('/blank', function () {
     return view('front.blank');
@@ -163,11 +191,6 @@ Route::post('req/online/assessment', function (Request $request) {
     return redirect()->to(route('front.online-assessment'));
 })->name('api.online.assessment');
 
-
-Route::post('req/login', function (Request $request) {
-    if (\Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
-        return true;
-    }
-
-    return false;
-})->name('api.login');
+Route::get('/follow-passport', function () {
+    return view('front.follow-passport');
+})->name('front.follow-passport');

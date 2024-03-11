@@ -51,7 +51,7 @@
                     </tfoot>
                     <tbody>
                         @php
-                            $onlineAssessmentModel = \App\Models\onlineAssessmentModel::all();
+                            $onlineAssessmentModel = \App\Models\onlineAssessmentModel::orderBy('id', 'desc')->get();
                         @endphp
                         @foreach($onlineAssessmentModel as $row)
                             <tr>
@@ -61,7 +61,7 @@
                                 <td>{{ $row->created_at }}</td>
                                 <td>
                                     <a href="{{ route('forms.assessment-view', $row->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
-                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></button>
+                                    <a href="{{ route('forms.assessment-delete', $row->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></a>
                                 </td>
                             </tr>
                         @endforeach 

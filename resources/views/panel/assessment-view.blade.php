@@ -47,8 +47,8 @@
                                 <label for="firstName" class="form-label"> تاهل </label>
                                 <select disabled name="status" class="form-select" id="country" required>
                                     <option>انتخاب کنید...</option>
-                                    <option>مجرد</option>
-                                    <option>متاهل</option>
+                                    <option {{ $onlineAssessmentModel->status == 'مجرد' ? 'selected':'' }}>مجرد</option>
+                                    <option {{ $onlineAssessmentModel->status == 'متاهل' ? 'selected':'' }}>متاهل</option>
                                 </select>
                             </div>
                         </div>
@@ -64,9 +64,9 @@
                                 <label for="firstName" class="form-label"> سطح زبان انگلیسی </label>
                                 <select disabled name="en-level" class="form-select" id="country" required>
                                     <option>انتخاب کنید...</option>
-                                    <option>هیچ</option>
-                                    <option>در حال خواندن هستم</option>
-                                    <option>مدرک زبان IELTS دارم</option>
+                                    <option {{ $onlineAssessmentModel['en-level'] == 'هیچ' ? 'selected':'' }}>هیچ</option>
+                                    <option {{ $onlineAssessmentModel['en-level'] == 'در حال خواندن هستم' ? 'selected':'' }}>در حال خواندن هستم</option>
+                                    <option {{ $onlineAssessmentModel['en-level'] == 'مدرک زبان IELTS دارم' ? 'selected':'' }}>مدرک زبان IELTS دارم</option>
                                 </select>
                             </div>
                         </div>
@@ -82,9 +82,9 @@
                                 <label for="firstName" class="form-label">تسلط به زبان فرانسه </label>
                                 <select disabled name="fr-level" class="form-select" id="country" required>
                                     <option>انتخاب کنید...</option>
-                                    <option>هیچ</option>
-                                    <option>در حال خواندن هستم</option>
-                                    <option>مدرک زبان TEF یا TCF دارم</option>
+                                    <option {{ $onlineAssessmentModel['fr-level'] == 'هیچ' ? 'selected':'' }}>هیچ</option>
+                                    <option {{ $onlineAssessmentModel['fr-level'] == 'در حال خواندن هستم' ? 'selected':'' }}>در حال خواندن هستم</option>
+                                    <option {{ $onlineAssessmentModel['fr-level'] == 'مدرک زبان TEF یا TCF دارم' ? 'selected':'' }}>مدرک زبان TEF یا TCF دارم</option>
                                 </select>
                             </div>
                         </div>
@@ -157,9 +157,9 @@
                                 <label for="firstName" class="form-label"> سابقه مدیریت با پروانه مطب یا جواز کسب </label>
                                 <select disabled name="business-license" class="form-select" id="country" required>
                                     <option>انتخاب کنید...</option>
-                                    <option>مدیر ارشد</option>
-                                    <option>مدیر میان</option>
-                                    <option>سایر</option>
+                                    <option {{ $onlineAssessmentModel['business-license'] == 'مدیر ارشد' ? 'selected':'' }}>مدیر ارشد</option>
+                                    <option {{ $onlineAssessmentModel['business-license'] == 'مدیر میان' ? 'selected':'' }}>مدیر میان</option>
+                                    <option {{ $onlineAssessmentModel['business-license'] == 'سایر' ? 'selected':'' }}>سایر</option>
                                 </select>
                             </div>
                         </div>
@@ -182,10 +182,10 @@
                                 <label for="firstName" class="form-label"> تمایل شما از چه روشی مهاجرتی است </label>
                                 <select disabled name="migration-method" class="form-select" id="country" required>
                                     <option>انتخاب کنید...</option>
-                                    <option>تحصیلی</option>
-                                    <option>کاری</option>
-                                    <option>سرمایه گذاری</option>
-                                    <option>غیره</option>
+                                    <option {{ $onlineAssessmentModel['migration-method'] == 'تحصیلی' ? 'selected':'' }}>تحصیلی</option>
+                                    <option {{ $onlineAssessmentModel['migration-method'] == 'کاری' ? 'selected':'' }}>کاری</option>
+                                    <option {{ $onlineAssessmentModel['migration-method'] == 'سرمایه گذاری' ? 'selected':'' }}>سرمایه گذاری</option>
+                                    <option {{ $onlineAssessmentModel['migration-method'] == 'غیره' ? 'selected':'' }}>غیره</option>
                                 </select>
                             </div>
                         </div>
@@ -194,11 +194,11 @@
                                 <label for="firstName" class="form-label"> چگونگی آشنایی با ما </label>
                                 <select disabled name="get-know" class="form-select" id="country" required>
                                     <option>انتخاب کنید...</option>
-                                    <option>گوگل</option>
-                                    <option>تلگرام</option>
-                                    <option>اینستاگرام</option>
-                                    <option>دوستان و آشنایان</option>
-                                    <option>ایمیل</option>
+                                    <option {{ $onlineAssessmentModel['get-know'] == 'گوگل' ? 'selected':'' }}>گوگل</option>
+                                    <option {{ $onlineAssessmentModel['get-know'] == 'تلگرام' ? 'selected':'' }}>تلگرام</option>
+                                    <option {{ $onlineAssessmentModel['get-know'] == 'اینستاگرام' ? 'selected':'' }}>اینستاگرام</option>
+                                    <option {{ $onlineAssessmentModel['get-know'] == 'دوستان و آشنایان' ? 'selected':'' }}>دوستان و آشنایان</option>
+                                    <option {{ $onlineAssessmentModel['get-know'] == 'ایمیل' ? 'selected':'' }}>ایمیل</option>
                                 </select>
                             </div>
                         </div>
@@ -235,10 +235,10 @@
                                             <label for="type-visa" class="form-label"> نوع ویزا</label>
                                             <select disabled name="type-visa[]" class="form-select" required>
                                                 <option>انتخاب کنید...</option>
-                                                <option>توریستس </option>
-                                                <option>کاری</option>
-                                                <option>تجاری </option>
-                                                <option>تحصیلی </option>
+                                                <option {{ $row['type-visa'] == 'توریستی' ? 'selected':'' }}>توریستی</option>
+                                                <option {{ $row['type-visa'] == 'کاری' ? 'selected':'' }}>کاری</option>
+                                                <option {{ $row['type-visa'] == 'تجاری' ? 'selected':'' }}>تجاری </option>
+                                                <option {{ $row['type-visa'] == 'تحصیلی' ? 'selected':'' }}>تحصیلی </option>
                                             </select>
                                         </div>
                                         <div class="col-lg-3">

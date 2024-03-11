@@ -24,7 +24,7 @@
                                 <div class="card-body">
 
                                     <form id="formAuthentication" action="{{ route('api.login') }}" method="post">
-
+                                        @csrf
                                         <!-- ایمیل -->
                                         <div class="mb-3">
                                             <label class="small mb-1" for="email">نام کاربری</label>

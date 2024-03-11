@@ -210,7 +210,7 @@
                     <h6 class="dropdown-header d-flex align-items-center">
                         <img class="dropdown-user-img" src="{{ customAsset('assets/img/profile-1.jpg') }}">
                         <div class="dropdown-user-details">
-                            <div class="dropdown-user-details-name">بنیامین پاتو</div>
+                            <div class="dropdown-user-details-name">مدیریت</div>
                             <div class="dropdown-user-details-email">مدیر سیستم</div>
                         </div>
                     </h6>
@@ -223,7 +223,7 @@
                         <div class="dropdown-item-icon"><i class="bx bx-lock"></i></div>
                         تغییر کلمه عبور
                     </a>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="{{ route('logout') }}">
                         <div class="dropdown-item-icon"><i class="bx bx-log-out"></i></div>
                         خروج
                     </a>
