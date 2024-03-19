@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <form action="https://www.vfsglobal.ca/canada" method="GET">
+                    <form action="https://www.vfsglobal.ca/IRCC-GPTWave1/Track/Index?q=shSA0YnE4pLF9Xzwon/x/CQ1P0LBKn66dLdNUfueK+wgQK15FNs3yVpXjESPsPIkYqDL56on8vfAnBfe7K1ejg==" method="GET">
                         <div class="row">
                             <div class="col-md-4">
                                 <input type="text" class="form-control" placeholder="نام" required />
