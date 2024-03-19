@@ -46,20 +46,17 @@
                         </tr>
                     </tfoot>
                     <tbody>
-                      
-                      
-                            <tr>
-                         
-                                
+                        @php
+
+                        @endphp
+                            <tr> 
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <a href="{{ route('panel.videos-view', $row->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
+                                    <a href="{{ route('panel.videos-view', 1) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
                                     <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></button>
                                 </td>
                             </tr>
-                       
-                            
                     </tbody>
                 </table>
             </div>

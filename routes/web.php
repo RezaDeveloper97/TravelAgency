@@ -19,7 +19,7 @@ use Illuminate\Http\Request;
 */
 
 Route::prefix('/admin')
-    ->middleware('auth')
+    ->middleware('auth:admin')
     ->group(function () {
 
         Route::get('/', function () {
@@ -50,7 +50,7 @@ Route::prefix('/admin')
             return view('panel.videos');
         })->name('panel.videos');
 
-        Route::get('panel.videos-view', function () {
+        Route::get('/videos/view/{id}', function ($id) {
             return view('panel.videos-view');
         })->name('panel.videos-view');
 
@@ -86,14 +86,17 @@ Route::get('/admin/logout', function () {
 
 
 Route::post('req/login', function (Request $request) {
+    
     $request->validate([
         'email' => 'required|email',
         'password' => 'required|string',
     ]);
 
-    if (\Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+    if (\Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
         return redirect()->to(route('panel.index'));
     }
+
+    dd("game over");
 
     return redirect()->to(route('login'));
 })->name('api.login');
