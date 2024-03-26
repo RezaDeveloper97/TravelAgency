@@ -59,7 +59,8 @@ Route::prefix('/admin')
             })->name('panel.add-video');
 
             Route::get('/view/{id}', function ($id) {
-                return view('panel.videos-view');
+                $video = Videos::findOrFail($id);
+                return view('panel.videos-view', compact('video'));
             })->name('panel.videos-view');
         });
 
@@ -208,13 +209,13 @@ Route::post('req/videos/add', function (Request $request) {
         'title' => $request->title,
         'description' => $request->description,
         'link' => '',
-        'cover' => \Storage::putFile('public', $request->file('cover'), 'public'),
+        'cover' => basename(\Storage::putFile('public', $request->file('cover'))),
     ]);
 
     if($request->video_link != '') {
         $video->link = $request->video_link;
     } elseif($request->hasFile('video_file')) {
-        $video->link = \Storage::putFile('public', $request->file('cover'), 'public');
+        $video->link = basename(\Storage::putFile('public', $request->file('cover')));
     }
 
     $video->save();
@@ -227,6 +228,27 @@ Route::get('req/videos/remove/{id}', function (Request $request, $id) {
     $video->delete();
     return redirect()->to(route('panel.videos'));
 })->name('api.remove-video');
+
+Route::post('req/videos/edit/{id}', function (Request $request, $id) {
+    $video = Videos::findOrFail($id);
+    $video->title = $request->title;
+    $video->description = $request->description;
+
+    if($request->video_link != '') {
+        $video->link = $request->video_link;
+    } elseif($request->hasFile('video_file')) {
+        $video->link = basename(\Storage::putFile('public', $request->file('cover')));
+    }
+
+    if($request->hasFile('cover')) {
+        $video->cover = basename(\Storage::putFile('public', $request->file('cover')));
+    }
+
+    $video->save();
+
+    return redirect()->to(route('panel.videos'));
+})->name('api.update-video');
+
 
 Route::get('/follow-passport', function () {
     return view('front.follow-passport');
