@@ -47,16 +47,22 @@
                     </tfoot>
                     <tbody>
                         @php
-
+                        
                         @endphp
+                        @foreach($videos as $video)
                             <tr> 
-                                <td></td>
-                                <td></td>
                                 <td>
-                                    <a href="{{ route('panel.videos-view', 1) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
+                                    {{ $video->title }}
+                                </td>
+                                <td>
+                                    {{ $video->created_at }}
+                                </td>
+                                <td>
+                                    <a href="{{ route('panel.videos-view', $video->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
                                     <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></button>
                                 </td>
                             </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

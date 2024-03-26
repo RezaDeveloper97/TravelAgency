@@ -5,6 +5,7 @@ use App\Http\Controllers\OnlineAssessmentModelController;
 use App\Models\onlineAssessmentJobsModel;
 use App\Models\onlineAssessmentModel;
 use App\Models\onlineAssessmentVisasModel;
+use App\Models\Videos;
 use Illuminate\Http\Request;
 
 /*
@@ -46,13 +47,21 @@ Route::prefix('/admin')
             return view('panel.post-add');
         })->name('panel.add');
 
-        Route::get('/videos', function () {
-            return view('panel.videos');
-        })->name('panel.videos');
+        Route::prefix('/videos')
+        ->group(function () {
+            Route::get('/', function () {
+                $videos = Videos::all();
+                return view('panel.videos', compact('videos'));
+            })->name('panel.videos');
+    
+            Route::get('/add', function () {
+                return view('panel.add-video');
+            })->name('panel.add-video');
 
-        Route::get('/videos/view/{id}', function ($id) {
-            return view('panel.videos-view');
-        })->name('panel.videos-view');
+            Route::get('/view/{id}', function ($id) {
+                return view('panel.videos-view');
+            })->name('panel.videos-view');
+        });
 
         Route::get('forms/assessment', function () {
             return view('panel.assessment');
@@ -95,8 +104,6 @@ Route::post('req/login', function (Request $request) {
     if (\Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
         return redirect()->to(route('panel.index'));
     }
-
-    dd("game over");
 
     return redirect()->to(route('login'));
 })->name('api.login');
@@ -193,6 +200,27 @@ Route::post('req/online/assessment', function (Request $request) {
 
     return redirect()->to(route('front.online-assessment'));
 })->name('api.online.assessment');
+
+Route::post('req/videos/add', function (Request $request) {
+    // dd($request->file());
+
+    $video = Videos::create([
+        'title' => $request->title,
+        'description' => $request->description,
+        'link' => '',
+        'cover' => \Storage::putFile('public', $request->file('cover'), 'public'),
+    ]);
+
+    if($request->video_link != '') {
+        $video->link = $request->video_link;
+    } elseif($request->hasFile('video_file')) {
+        $video->link = \Storage::putFile('public', $request->file('cover'), 'public');
+    }
+
+    $video->save();
+
+    return redirect()->to(route('panel.videos'));
+})->name('api.add-video');
 
 Route::get('/follow-passport', function () {
     return view('front.follow-passport');
