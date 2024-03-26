@@ -46,7 +46,7 @@
             <!-- Modal -->
             <div class="modal fade" id="videoModal-{{$video->id}}" tabindex="-1" aria-labelledby="videoModal-{{$video->id}}Label" aria-hidden="true">
                 <div class="modal-dialog">
-                    <div class="modal-content">
+                    <div class="modal-content bg-white">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="videoModal-{{$video->id}}Label">{{ $video->title }}</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

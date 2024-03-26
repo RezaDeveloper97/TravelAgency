@@ -211,10 +211,10 @@ Route::post('req/videos/add', function (Request $request) {
         'cover' => basename(\Storage::putFile('public', $request->file('cover'))),
     ]);
 
-    if($request->video_link != '') {
+    if($request->file('video_file') != null) {
+        $video->link = basename(\Storage::putFile('public', $request->file('video_file')));
+    } elseif($request->video_link != '') {
         $video->link = $request->video_link;
-    } elseif($request->hasFile('video_file')) {
-        $video->link = basename(\Storage::putFile('public', $request->file('cover')));
     }
 
     $video->save();
@@ -233,10 +233,10 @@ Route::post('req/videos/edit/{id}', function (Request $request, $id) {
     $video->title = $request->title;
     $video->description = $request->description;
 
-    if($request->video_link != '') {
+    if($request->file('video_file') != null) {
+        $video->link = basename(\Storage::putFile('public', $request->file('video_file')));
+    } elseif($request->video_link != '') {
         $video->link = $request->video_link;
-    } elseif($request->hasFile('video_file')) {
-        $video->link = basename(\Storage::putFile('public', $request->file('cover')));
     }
 
     if($request->hasFile('cover')) {
