@@ -16,7 +16,7 @@
                     <div class="col-auto mt-4">
                         <h1 class="page-header-title">
                             <i class="ms-1 me-1 bx bx-filter"></i>
-                            لیست فرم تماس با ما
+                            لیست ویدئو ها
                         </h1>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
 
     <div class="container-xl px-4 mt-n10 is-rtl">
         <div class="card mb-4">
-            <div class="card-header">جدول داده ها</div>
+            <div class="card-header"><a href="{{ route('panel.add-video') }}" class="fw-500 btn btn-primary">افزودن ویدئو جدید</a></div>
             <div class="card-body">
 
 
