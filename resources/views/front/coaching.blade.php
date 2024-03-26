@@ -52,7 +52,13 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <video class="w-100" src="{{ $video->link }}" autoplay controls></video>
+                        <video class="w-100" controls autoplay>
+                            <source src="{{ $video->link }}" type="video/mp4">
+                        </video>
+                        <br>
+                        <p>
+                            {{ $video->description }}
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
