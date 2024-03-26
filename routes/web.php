@@ -143,7 +143,8 @@ Route::get('/work-visa', function () {
 })->name('front.work-visa');
 
 Route::get('/coaching', function () {
-    return view('front.coaching');
+    $videos = Videos::all();
+    return view('front.coaching', compact('videos'));
 })->name('front.coaching');
 
 Route::get('/tourist-visa', function () {
@@ -203,8 +204,6 @@ Route::post('req/online/assessment', function (Request $request) {
 })->name('api.online.assessment');
 
 Route::post('req/videos/add', function (Request $request) {
-    // dd($request->file());
-
     $video = Videos::create([
         'title' => $request->title,
         'description' => $request->description,
@@ -248,7 +247,6 @@ Route::post('req/videos/edit/{id}', function (Request $request, $id) {
 
     return redirect()->to(route('panel.videos'));
 })->name('api.update-video');
-
 
 Route::get('/follow-passport', function () {
     return view('front.follow-passport');

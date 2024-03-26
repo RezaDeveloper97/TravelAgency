@@ -24,145 +24,43 @@
 <div class="inner-coaching-warp pt-100 pb-75">
     <div class="container">
         <div class="row justify-content-center">
+            @foreach($videos as $video)
             <div class="col-lg-4 col-sm-6">
                 <div class="coaching-box">
                     <div class="image">
-                        <img src="front-assets/images/choose/coaching1.jpg" alt="image">
+                        <img src="{{ asset('storage/' . $video->cover) }}" alt="{{ $video->title }}">
                     </div>
                     <div class="content">
                         <h3>
-                            <a href="coaching-details.html"></a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoModal-{{$video->id}}">
+                            نمایش
+                            </button>
                         </h3>
                         <p>
-                            عنوان ویدئو
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="coaching-box">
-                    <div class="image">
-                        <img src="front-assets/images/choose/coaching1.jpg" alt="image">
-                    </div>
-                    <div class="content">
-                        <h3>
-                            <a href="coaching-details.html"></a>
-                        </h3>
-                        <p>
-                            عنوان ویدئو
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="coaching-box">
-                    <div class="image">
-                        <img src="front-assets/images/choose/coaching1.jpg" alt="image">
-                    </div>
-                    <div class="content">
-                        <h3>
-                            <a href="coaching-details.html"></a>
-                        </h3>
-                        <p>
-                            عنوان ویدئو
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="coaching-box">
-                    <div class="image">
-                        <img src="front-assets/images/choose/coaching1.jpg" alt="image">
-                    </div>
-                    <div class="content">
-                        <h3>
-                            <a href="coaching-details.html"></a>
-                        </h3>
-                        <p>
-                            عنوان ویدئو
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="coaching-box">
-                    <div class="image">
-                        <img src="front-assets/images/choose/coaching1.jpg" alt="image">
-                    </div>
-                    <div class="content">
-                        <h3>
-                            <a href="coaching-details.html"></a>
-                        </h3>
-                        <p>
-                            عنوان ویدئو
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="coaching-box">
-                    <div class="image">
-                        <img src="front-assets/images/choose/coaching1.jpg" alt="image">
-                    </div>
-                    <div class="content">
-                        <h3>
-                            <a href="coaching-details.html"></a>
-                        </h3>
-                        <p>
-                            عنوان ویدئو
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="coaching-box">
-                    <div class="image">
-                        <img src="front-assets/images/choose/coaching1.jpg" alt="image">
-                    </div>
-                    <div class="content">
-                        <h3>
-                            <a href="coaching-details.html"></a>
-                        </h3>
-                        <p>
-                            عنوان ویدئو
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="coaching-box">
-                    <div class="image">
-                        <img src="front-assets/images/choose/coaching1.jpg" alt="image">
-                    </div>
-                    <div class="content">
-                        <h3>
-                            <a href="coaching-details.html"></a>
-                        </h3>
-                        <p>
-                            عنوان ویدئو
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="coaching-box">
-                    <div class="image">
-                        <img src="front-assets/images/choose/coaching1.jpg" alt="image">
-                    </div>
-                    <div class="content">
-                        <h3>
-                            <a href="coaching-details.html"></a>
-                        </h3>
-                        <p>
-                            عنوان ویدئو
+                            {{ $video->title }}
                         </p>
                     </div>
                 </div>
             </div>
 
-        </div>
-        <div class="visa-btn text-center">
-            <a href="visa-details.html" class="default-btn">بیشتر</a>
+            <!-- Modal -->
+            <div class="modal fade" id="videoModal-{{$video->id}}" tabindex="-1" aria-labelledby="videoModal-{{$video->id}}Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="videoModal-{{$video->id}}Label">{{ $video->title }}</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <video class="w-100" src="{{ $video->link }}" autoplay controls></video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
         </div>
     </div>
 </div>
