@@ -234,7 +234,8 @@ Route::post('req/videos/edit/{id}', function (Request $request, $id) {
     $video->description = $request->description;
 
     if($request->file('video_file') != null) {
-        $video->link = basename(\Storage::putFile('public', $request->file('video_file')));
+        dd($request->file('video_file')->getErrorMessage());
+        $video->link = basename(\Storage::putFile($request->file('video_file'), 'video_file'));
     } elseif($request->video_link != '') {
         $video->link = $request->video_link;
     }

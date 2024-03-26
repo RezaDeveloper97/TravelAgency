@@ -53,7 +53,7 @@
                     </div>
                     <div class="modal-body">
                         <video class="w-100" controls autoplay>
-                            <source src="{{ $video->link }}" type="video/mp4">
+                            <source src="{{ \Storage::exists('/public/' . $video->link) ? asset('storage/' . $video->link) ? $video->link}}" type="video/mp4">
                         </video>
                         <br>
                         <p>
