@@ -222,6 +222,12 @@ Route::post('req/videos/add', function (Request $request) {
     return redirect()->to(route('panel.videos'));
 })->name('api.add-video');
 
+Route::get('req/videos/remove/{id}', function (Request $request, $id) {
+    $video = Videos::findOrFail($id);
+    $video->delete();
+    return redirect()->to(route('panel.videos'));
+})->name('api.remove-video');
+
 Route::get('/follow-passport', function () {
     return view('front.follow-passport');
 })->name('front.follow-passport');

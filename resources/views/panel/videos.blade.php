@@ -46,11 +46,8 @@
                         </tr>
                     </tfoot>
                     <tbody>
-                        @php
-                        
-                        @endphp
                         @foreach($videos as $video)
-                            <tr> 
+                            <tr>
                                 <td>
                                     {{ $video->title }}
                                 </td>
@@ -59,7 +56,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('panel.videos-view', $video->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
-                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></button>
+                                    <a href="{{ route('api.remove-video', $video->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></a>
                                 </td>
                             </tr>
                         @endforeach
