@@ -29,23 +29,22 @@
                 <div class="card-body">
                     <div class="row justify-content-center">
                         
-                            <div class="contact-form">
+                            <div class="col-md-12">
                                 <form>
-                                    
                                     <div class="col-lg-4 mb-3">
-                                        <input type="text" class="form-control" name="contactName" readonly placeholder="نام کامل" /> 
+                                        <input type="text" class="form-control" value="{{ $contact->full_name }}" readonly placeholder="نام کامل" /> 
                                     </div>
                                     <div class="col-lg-4 mb-3">
-                                        <input type="text" class="form-control" name="contactEmail" readonly placeholder="آدرس ایمیل" />
+                                        <input type="text" class="form-control" value="{{ $contact->email }}" readonly placeholder="آدرس ایمیل" />
                                     </div>
                                     <div class="col-lg-4 mb-3">
-                                        <input type="text" class="form-control" name="contactTell" readonly placeholder="تلفن" />
+                                        <input type="text" class="form-control" value="{{ $contact->tel }}" readonly placeholder="تلفن" />
                                     </div>
                                     <div class="col-lg-4 mb-3">
-                                        <input type="text" class="form-control" name="contactSubject" readonly placeholder="موضوع" /> 
+                                        <input type="text" class="form-control" value="{{ $contact->title }}" readonly placeholder="موضوع" /> 
                                     </div>
                                     <div class="col-lg-4 mb-3">
-                                        <textarea type="text" class="form-control" name="contactMsg" readonly rows="10" placeholder="پیام"></textarea>
+                                        <textarea type="text" class="form-control" readonly rows="10" placeholder="پیام">{{ $contact->content }}</textarea>
                                     </div>
                                     <div class="col-lg-4 mb-3">
                                         <a href="{{ route('forms.contact') }}">بازگشت به لیست</a>

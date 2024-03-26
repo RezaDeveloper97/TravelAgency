@@ -63,14 +63,18 @@
             <div class="col-lg-6">
                 <div class="contact-form">
                     <h4>ارسال یک پیام</h4>
-                    <form>
-                        <input type="text" class="form-control" name="contactName" placeholder="نام کامل" /> 
-                        <input type="text" class="form-control" name="contactEmail" placeholder="آدرس ایمیل" />
-                        <input type="text" class="form-control" name="contactTell" placeholder="تلفن" />
-                        <input type="text" class="form-control" name="contactSubject" placeholder="موضوع" /> 
-                        <textarea type="text" class="form-control" name="contactMsg" placeholder="پیام"></textarea>
-                        <button class="default-btn" type="submit">ارسال پیام</button>
+                    <form method="POST" action="{{ route('api.add-contact') }}">
+                        @csrf
+                        <input required type="text" class="form-control" name="full_name" placeholder="نام کامل" /> 
+                        <input required type="text" class="form-control" name="email" placeholder="آدرس ایمیل" />
+                        <input required type="text" class="form-control" name="tel" placeholder="تلفن" />
+                        <input required type="text" class="form-control" name="title" placeholder="موضوع" /> 
+                        <textarea required type="text" class="form-control" name="content" placeholder="پیام"></textarea>
+                        <button type="submit" class="default-btn" type="submit">ارسال پیام</button>
                     </form>
+                    @if(session('message'))
+                        <div class="mt-5 alert alert-success">{{ session('message') }}</div>
+                    @endif
                 </div>
             </div>
         </div>

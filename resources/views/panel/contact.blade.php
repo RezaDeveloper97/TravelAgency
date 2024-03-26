@@ -54,20 +54,17 @@
                         </tr>
                     </tfoot>
                     <tbody>
-                        @php
-                            $onlineAssessmentModel = \App\Models\onlineAssessmentModel::all();
-                        @endphp
-                        @foreach($onlineAssessmentModel as $row)
+                        @foreach($contacts as $row)
                             <tr>
-                                <td>{{ $row->fnamelname }}</td>
-                                <td>{{ $row->whatsapp }}</td>
-                                <td>{{ $row['active-email'] }}</td>
-                                <td>{{ $row->created_at }}</td>
-                                <td></td>
-                                <td></td>
+                                <td>{{ $row->full_name }}</td>
+                                <td>{{ $row->email }}</td>
+                                <td>{{ $row->tel }}</td>
+                                <td>{{ $row->title }}</td>
+                                <td>{{ $row->content }}</td>
+                                <td dir="ltr">{{ $row->created_at }}</td>
                                 <td>
                                     <a href="{{ route('forms.contact-view', $row->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
-                                    <button class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></button>
+                                    <a href="{{ route('api.contact-remove', $row->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></a>
                                 </td>
                             </tr>
                         @endforeach 

@@ -6,6 +6,7 @@ use App\Models\onlineAssessmentJobsModel;
 use App\Models\onlineAssessmentModel;
 use App\Models\onlineAssessmentVisasModel;
 use App\Models\Videos;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 /*
@@ -82,6 +83,16 @@ Route::prefix('/admin')
             $onlineAssessmentVisasModel = onlineAssessmentVisasModel::where('online_assessment_id', $id)->delete();
             return redirect()->to(route('forms.assessment'));
         })->name('forms.assessment-delete');
+
+        Route::get('forms/contact-view/{id}', function ($id) {
+            $contact = Contact::findOrFail($id);
+            return view('panel.contact-view', compact('contact'));
+        })->name('forms.contact-view');
+        
+        Route::get('forms/contact', function () {
+            $contacts = Contact::all();
+            return view('panel.contact',  compact('contacts'));
+        })->name('forms.contact');
     });
 
 Route::get('/admin/login', function () {
@@ -129,14 +140,6 @@ Route::get('/online-assessment', function () {
 Route::get('/contact', function () {
     return view('front.contact');
 })->name('front.contact');
-
-Route::get('/forms/contact-view', function () {
-    return view('panel.contact-view');
-})->name('forms.contact-view');
-
-Route::get('/forms/contact', function () {
-    return view('panel.contact');
-})->name('forms.contact');
 
 Route::get('/work-visa', function () {
     return view('front.work-visa');
@@ -252,3 +255,15 @@ Route::post('req/videos/edit/{id}', function (Request $request, $id) {
 Route::get('/follow-passport', function () {
     return view('front.follow-passport');
 })->name('front.follow-passport');
+
+Route::post('req/contact/add', function (Request $request) {
+    $video = Contact::create($request->all());
+
+    return redirect()->to(route('front.contact'))->with('message', 'با موفقیت ارسال شد');
+})->name('api.add-contact');
+
+Route::get('req/contact/remove/{id}', function (Request $request, $id) {
+    $contact = Contact::findOrFail($id);
+    $contact->delete();
+    return redirect()->to(route('forms.contact'));
+})->name('api.contact-remove');
