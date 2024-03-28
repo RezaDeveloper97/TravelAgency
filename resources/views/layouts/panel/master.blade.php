@@ -274,6 +274,11 @@
                             <div class="nav-link-icon"><i class="bx bxs-video"></i></div>
                           ویدئو ها
                         </a>
+
+                        <a class="nav-link" href="{{ route('panel.track-passport') }}">
+                            <div class="nav-link-icon"><i class="bx bxs-video"></i></div>
+                         پیگیری پاسپورت
+                        </a>
                        
                         
                     </div>
