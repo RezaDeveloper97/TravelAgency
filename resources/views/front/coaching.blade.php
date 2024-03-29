@@ -52,13 +52,20 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <video class="w-100" controls autoplay>
-                            <source src="{{ \Storage::exists('/public/' . $video->link) ? asset('/storage/' . $video->link) : $video->link }}" type="video/mp4">
-                        </video>
+                        @if($video->file != '')
+                            <video class="w-100" controls autoplay>
+                                <source src="{{ asset('/storage/' . $video->file) }}" type="video/mp4">
+                            </video>
+                        @endif
                         <br>
                         <p>
                             {{ $video->description }}
                         </p>
+                        @if($video->link != '')
+                            <a class="text-primary" href="{{ $video->link }}" target="_blank">
+                                لینک
+                            </a>
+                        @endif
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>

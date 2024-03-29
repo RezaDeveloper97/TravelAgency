@@ -26,7 +26,7 @@
 
     <div class="container-xl px-4 mt-n10 is-rtl">
         <div class="card mb-4">
-            <div class="card-header"><a href="{{ route('panel.add-video') }}" class="fw-500 btn btn-primary">افزودن پاسپورت جدید</a></div>
+            <div class="card-header"><a href="{{ route('panel.passport-new') }}" class="fw-500 btn btn-primary">افزودن پاسپورت جدید</a></div>
             <div class="card-body">
 
 
@@ -44,21 +44,32 @@
                             <th>نام</th>
                             <th>نام خانوادگی</th>
                             <th>شماره پاسپورت</th>
+                            <th>وضعیت</th>
                             <th>تاریخ ثبت</th>
+                            <th>عملیات</th>
                         </tr>
                     </tfoot>
                     <tbody>
-                        @foreach($videos as $video)
+                        @foreach($followPassports as $followPassport)
                             <tr>
                                 <td>
-                                    {{ $video->title }}
+                                    {{ $followPassport->first_name }}
                                 </td>
                                 <td>
-                                    {{ $video->created_at }}
+                                    {{ $followPassport->last_name }}
                                 </td>
                                 <td>
-                                    <a href="{{ route('panel.videos-view', $video->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
-                                    <a href="{{ route('api.remove-video', $video->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></a>
+                                    {{ $followPassport->passport }}
+                                </td>
+                                <td>
+                                    {{ $followPassport->status }}
+                                </td>
+                                <td>
+                                    {{ $followPassport->created_at }}
+                                </td>
+                                <td>
+                                    <a href="{{ route('panel.passport-view', $followPassport->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark me-2"><i class="bx bx-show"></i></a>
+                                    <a href="{{ route('api.remove-passport-track', $followPassport->id) }}" class="btn btn-datatable btn-icon btn-transparent-dark"><i class="bx bx-trash"></i></a>
                                 </td>
                             </tr>
                         @endforeach

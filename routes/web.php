@@ -7,6 +7,7 @@ use App\Models\onlineAssessmentModel;
 use App\Models\onlineAssessmentVisasModel;
 use App\Models\Videos;
 use App\Models\Contact;
+use App\Models\FollowPassport;
 use Illuminate\Http\Request;
 
 /*
@@ -93,6 +94,46 @@ Route::prefix('/admin')
             $contacts = Contact::all();
             return view('panel.contact',  compact('contacts'));
         })->name('forms.contact');
+
+        Route::get('passports/list', function () {
+            $followPassports = FollowPassport::all();
+            return view('panel.track-passport',  compact('followPassports'));
+        })->name('panel.passports');
+
+        Route::get('passports/track/new', function () {
+            return view('panel.track-passport-add');
+        })->name('panel.passport-new');
+
+        Route::get('passports/track/{id}', function ($id) {
+            $followPassport = FollowPassport::findOrFail($id);
+
+            return view('panel.track-passport-view', compact('followPassport'));
+        })->name('panel.passport-view');
+
+        Route::get('req/passports/track/{id}/delete', function ($id) {
+            $followPassport = FollowPassport::findOrFail($id);
+            $followPassport->delete();
+            return redirect()->to(route('panel.passports'));
+        })->name('api.remove-passport-track');
+
+        Route::post('req/passports/track/add', function (Request $request) {
+            FollowPassport::create($request->all());
+        
+            return redirect()->to(route('panel.passports'));
+        })->name('api.add-passport-track');
+
+        Route::post('req/passports/track/{id}/edit', function (Request $request, $id) {
+            $followPassport = FollowPassport::findOrFail($id);
+            $followPassport->first_name = $request->first_name;
+            $followPassport->last_name = $request->last_name;
+            $followPassport->status = $request->status;
+            $followPassport->passport = $request->passport;
+            $followPassport->save();
+
+            return redirect()->to(route('panel.passports'));
+        })->name('api.edit-passport-track');
+
+        
     });
 
 Route::get('/admin/login', function () {
@@ -210,15 +251,14 @@ Route::post('req/videos/add', function (Request $request) {
     $video = Videos::create([
         'title' => $request->title,
         'description' => $request->description,
-        'link' => '',
+        'link' => $request->video_link,
+        'file' => '',
         'cover' => basename(\Storage::putFile('public', $request->file('cover'))),
     ]);
 
     if($request->file('video_file') != null) {
-        $video->link = basename(\Storage::putFile('public', $request->file('video_file')));
-    } elseif($request->video_link != '') {
-        $video->link = $request->video_link;
-    }
+        $video->file = basename(\Storage::putFile('public', $request->file('video_file')));
+    } 
 
     $video->save();
 
@@ -235,12 +275,10 @@ Route::post('req/videos/edit/{id}', function (Request $request, $id) {
     $video = Videos::findOrFail($id);
     $video->title = $request->title;
     $video->description = $request->description;
+    $video->link = $request->video_link;
 
     if($request->file('video_file') != null) {
-        dd($request->file('video_file')->getErrorMessage());
-        $video->link = basename(\Storage::putFile($request->file('video_file'), 'video_file'));
-    } elseif($request->video_link != '') {
-        $video->link = $request->video_link;
+        $video->file = basename(\Storage::putFile($request->file('video_file'), 'video_file'));
     }
 
     if($request->hasFile('cover')) {
@@ -267,3 +305,9 @@ Route::get('req/contact/remove/{id}', function (Request $request, $id) {
     $contact->delete();
     return redirect()->to(route('forms.contact'));
 })->name('api.contact-remove');
+
+Route::post('req/passport/checker', function (Request $request) {
+    $followPassport = FollowPassport::where('passport', $request->passport)->firstOrFail();
+
+    return redirect()->to(route('front.follow-passport'))->with('message', $followPassport->status);
+})->name('api.passport-checker');

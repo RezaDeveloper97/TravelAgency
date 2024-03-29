@@ -275,7 +275,7 @@
                           ویدئو ها
                         </a>
 
-                        <a class="nav-link" href="{{ route('panel.track-passport') }}">
+                        <a class="nav-link" href="{{ route('panel.passports') }}">
                             <div class="nav-link-icon"><i class="bx bxs-video"></i></div>
                          پیگیری پاسپورت
                         </a>

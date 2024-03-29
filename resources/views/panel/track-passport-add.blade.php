@@ -25,14 +25,14 @@
     </header>
 
     <div class="container-xl px-4 mt-n10 is-rtl">
-        <form action="{{ route('api.edit-passport-track', $followPassport->id) }}" method="POST">
+        <form action="{{ route('api.add-passport-track') }}" method="POST">
             @csrf
             <div class="row gx-4">
                 <div class="col-lg-8">
                     <div class="card mb-4">
                         <div class="card-header">نام</div>
                         <div class="card-body">
-                            <input class="form-control" name="first_name" type="text" value="{{ $followPassport->first_name }}" required />
+                            <input class="form-control" name="first_name" type="text" required>
                         </div>
                     </div>
 
@@ -41,14 +41,14 @@
                            نام خانوادگی
                         </div>
                         <div class="card-body">
-                            <input class="form-control" name="last_name" type="text" value="{{ $followPassport->last_name }}" required />
+                            <input class="form-control" name="last_name" type="text" required>
                         </div>
                     </div>
 
                     <div class="card mb-4">
                         <div class="card-header">شماره پاسپورت</div>
                         <div class="card-body">
-                            <input class="form-control" name="passport" dir="ltr" type="text" value="{{ $followPassport->passport }}" required />
+                            <input class="form-control" name="passport" dir="ltr" type="text" required>
                         </div>
                     </div>
 
@@ -56,17 +56,10 @@
                         <div class="card-header">وضعیت</div>
                         <div class="card-body">
                             <select class="form-control" name="status" required>
-                                @php
-                                $selectArray = [
-                                    'در پروسه ارسال می باشد',
-                                    'به VAC تحویل داده شد',
-                                    'از VAC تحویل گرفته شده و در حال ارسال به ایران می باشد',
-                                    'مدارک در دفتر تهران آماده تحویل می باشد',
-                                ];
-                                @endphp
-                                @foreach($selectArray as $item)
-                                    <option {{ $item == $followPassport->status ? 'selected':'' }}>{{ $item }}</option>
-                                @endforeach
+                                <option>در پروسه ارسال می باشد</option>
+                                <option>به VAC تحویل داده شد</option>
+                                <option>از VAC تحویل گرفته شده و در حال ارسال به ایران می باشد</option>
+                                <option>مدارک در دفتر تهران آماده تحویل می باشد</option>
                             </select>
                         </div>
                     </div>

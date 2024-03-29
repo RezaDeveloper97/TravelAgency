@@ -13,6 +13,7 @@ class Videos extends Model
         'title',
         'description',
         'link',
+        'file',
         'cover'
     ];
 }

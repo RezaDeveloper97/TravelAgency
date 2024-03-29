@@ -25,7 +25,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <form action="https://www.vfsglobal.ca/IRCC-GPTWave1/Track/Index?q=shSA0YnE4pLF9Xzwon/x/CQ1P0LBKn66dLdNUfueK+wgQK15FNs3yVpXjESPsPIkYqDL56on8vfAnBfe7K1ejg==" method="GET">
+                    <form action="{{ route('api.passport-checker') }}" method="POST">
+                        @csrf
                         <div class="row">
                             <div class="col-md-4">
                                 <input type="text" class="form-control" placeholder="نام" required />
@@ -34,7 +35,7 @@
                                 <input type="text" class="form-control" placeholder="نام خانوادگی" required />
                             </div>
                             <div class="col-md-4">
-                                <input type="text" class="form-control" placeholder="شماره پاسپورت" required />
+                                <input type="text" class="form-control" name="passport" placeholder="شماره پاسپورت" required />
                             </div>
                             <div class="col-12 mt-4">
                                 <button class="btn btn-success" type="submit">پیگیری</button>
@@ -42,6 +43,12 @@
                         </div>
                     </form>
                 </div>
+
+                @if(session('message'))
+                <div class="col-12 mt-4">
+                    <div class="mt-5 alert alert-success">{{ session('message') }}</div>
+                </div>
+                @endif
             </div>
         </div>
     </div>

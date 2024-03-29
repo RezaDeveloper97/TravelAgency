@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title', 500);
             $table->string('description', 500);
             $table->string('link', 500);
+            $table->string('file', 500);
             $table->string('cover', 500);
             $table->timestamps();
         });
