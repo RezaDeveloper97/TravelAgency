@@ -21,27 +21,44 @@
         <img src="front-assets/images/shapes/inner-hero-shape1.png" class="inner-hero-shape1" alt="image">
     </div>
     <!-- Inner Hero Warp End -->
-    <div class="inner-blog-warp pt-100 pb-75 ">
+    <div class="inner-blog-warp pt-100 pb-75">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <div class="shadow-sm p-3 bg-light">
                     <form action="{{ route('api.passport-checker') }}" method="POST">
                         @csrf
                         <div class="row">
-                            <div class="col-md-4">
-                                <input type="text" class="form-control" placeholder="نام" required />
+                            <div class="mt-3">
+                                <div class="col">
+                                    <label class="fw-bold" for="">نام</label>
+                                    <input type="text" class="form-control" placeholder="" required />
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <input type="text" class="form-control" placeholder="نام خانوادگی" required />
+                            <div class="mt-3">
+                                <div class="col">
+                                    <label class="fw-bold" for="">نام خانوادگی</label>
+                                    <input type="text" class="form-control" placeholder="" required />
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <input type="text" class="form-control" name="passport" placeholder="شماره پاسپورت" required />
+                            <div class="mt-3">
+                                <div class="col">
+                                    <label class="fw-bold" for="">شماره پاسپورت</label>
+                                    <input type="text" dir="ltr" class="form-control" name="passport" placeholder="" required />
+                                </div>
                             </div>
-                            <div class="col-12 mt-4">
-                                <button class="btn btn-success" type="submit">پیگیری</button>
+                            <div class="mt-3">
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-success w-50" type="submit">پیگیری</button>
+                                </div>
                             </div>
+                           
+                            
+                          
+                           
                         </div>
                     </form>
+                </div>
                 </div>
 
                 @if(session('message'))
