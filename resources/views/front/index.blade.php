@@ -11,26 +11,10 @@
     
 <!-- Hero Warp Start -->
 <div class="hero-warp">
-    <div class="container-fluid">
-    
-            <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                    
-                        {{-- <div class="hero-btn">
-                            <a href="contact.html" class="default-btn">تماس با ما</a>
-                            <a href="apply.html" class="default-btn style2">مرور کن</a>
-                        </div> --}}
-                    </div>
-                </div>
-                {{-- <div class="col-lg-6">
-                    <div class="hero-image">
-                        <img src="front-assets/images/hero/hero2.png" alt="image">
-                    </div>
-                </div> --}}
-            </div>
-        
-    </div>
+    <picture>
+        <source media="(max-width: 991px)" srcset="front-assets/images/hero/slider-up-mobile.jpg">
+        <img src="front-assets/images/hero/hero1.jpg" alt="">
+      </picture>
 </div>
 
 <div class="container">

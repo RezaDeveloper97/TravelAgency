@@ -71,9 +71,13 @@
   /*
   Hero Warp Style
   ======================================================*/
-  .hero-content {
-    padding-top: 60px;
-    padding-bottom: 30px;
+  .hero-wrap {
+    background-image: url(../images/hero/hero1.jpg);
+    background-position: 18% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
   }
   .hero-content h1 {
     font-size: 25px;

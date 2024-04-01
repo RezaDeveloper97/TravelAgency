@@ -434,13 +434,14 @@ Top Header Warp Style
 /*
 Hero  Warp  Style
 ======================================================*/
-.hero-warp {
+
+/* .hero-warp {
     background-image: url(../images/hero/hero1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+} */
 
 .hero-content {
     padding-top: 205px;
@@ -502,6 +503,9 @@ Hero  Warp  Style
         width: 100%;
         background-color: #ffffff;
     }
+
+
+ 
 
 /*
 Immigration Warp  Style
