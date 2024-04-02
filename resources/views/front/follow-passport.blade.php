@@ -24,7 +24,7 @@
     <div class="inner-blog-warp pt-100 pb-75">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="shadow-sm p-3 bg-light">
                     <form action="{{ route('api.passport-checker') }}" method="POST">
                         @csrf
